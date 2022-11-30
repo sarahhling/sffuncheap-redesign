@@ -3,7 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 Follow the steps below to get the repo running locally:
-clone the repo into a local folder then run `npm install ` and `npm run dev`
+clone the repo into a local folder then run `npm install` and `npm run dev`
 
 ```bash
 git clone https://github.com/sarahhling/sffuncheap-redesign.git
