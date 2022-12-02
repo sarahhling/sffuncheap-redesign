@@ -2,6 +2,44 @@
   padding: 0 2rem;
 }
 
+.header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 80px;
+	padding: 0 2rem;
+	background-color: var(--mainColor);
+	color: var(--textColor);
+}
+
+.nav a {
+	margin: 0 1rem;
+	color: var(--textColor);
+	text-decoration: none;
+}
+
+.nav a:hover {
+	color: var(--secondaryColor);
+}
+
+.header .nav-btn {
+	padding: 5px;
+	cursor: pointer;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: var(--textColor);
+	visibility: hidden;
+	opacity: 0;
+	font-size: 1.8rem;
+}
+
+/* .header div,
+nav {
+	display: flex;
+	align-items: center;
+} */
+
 .main {
   min-height: 100vh;
   padding: 4rem 0;
