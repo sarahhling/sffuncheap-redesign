@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Navbar from ".Components/Navbar";
+import Navbar from ".Components/navbar";
 // import Components from "../components/navbar.js"
 
 export default function Home() {

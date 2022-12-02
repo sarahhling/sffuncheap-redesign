@@ -11,6 +11,7 @@ function Navbar() {
                     <a href="/filter">Search</a>
                 </div>
             </div>
+            <div className="rightSide"></div>
         </div>
     );
 }
