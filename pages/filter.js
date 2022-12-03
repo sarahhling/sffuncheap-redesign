@@ -16,6 +16,44 @@ const Category = () => {
                     <button className='btn'>South Bay</button>
                 </div>
                 <div classname="col">
+                    <div className="cards">
+                        <div className="card">
+                            <div className="card-header">
+                                {/* insert image here */}
+                            </div>
+                            <div className="card-body">
+                                <h2 className='eventName'>Event 1</h2>
+                                <span className="date">Date:</span>
+                                <span className="time">Time:</span>
+                                <span className="Location">Date:</span>
+                                <span className="Cost">Cost: Free</span>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="card-header">
+                                {/* insert image here */}
+                            </div>
+                            <div className="card-body">
+                                <h2 className='eventName'>Event 2</h2>
+                                <span className="date">Date:</span>
+                                <span className="time">Time:</span>
+                                <span className="Location">Date:</span>
+                                <span className="Cost">Cost: $7</span>
+                            </div>
+                        </div>
+                        <div className="card">
+                            <div className="card-header">
+                                {/* insert image here */}
+                            </div>
+                            <div className="card-body">
+                                <h2 className='eventName'>Event 3</h2>
+                                <span className="date">Date:</span>
+                                <span className="time">Time:</span>
+                                <span className="Location">Date:</span>
+                                <span className="Cost">Cost: Free</span>
+                            </div>
+                        </div>
+                    </div>
                     Right
                 </div>
             </div>
