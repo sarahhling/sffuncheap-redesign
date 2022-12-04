@@ -20,7 +20,8 @@ export default function Home() {
         <Row className="gridRow">
           <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
             <Image
-              src="https://images.unsplash.com/photo-1521464302861-ce943915d1c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80"
+              src="https://images.unsplash.com/photo-1521464302861-ce943915d1c3?ixlib=rb-4.0.3&ixid=&auto=format&fit=crop&w=2671&q=80"
+              //src="golden-gate-bridge.png"
               alt="golden gate bridge"
               height={300}
             />
@@ -39,7 +40,7 @@ export default function Home() {
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
           <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
-            <div className={` py-4 px-2 ${styles.square}`}>
+            <div className={` py-4 px-3 ${styles.square}`}>
               <p>WHO ARE WE?</p>
             </div>
           </Col>
@@ -65,7 +66,7 @@ export default function Home() {
             <BannerBlock
               color="#1E5276"
               text="JUST ADDED"
-              paddingLeft="12px"
+              paddingLeft="16px"
               paddingTop="25px"
             />
           </Col>
@@ -87,7 +88,7 @@ export default function Home() {
             <BannerBlock
               color="#E07673"
               text="EVENTS BY TAGS"
-              paddingLeft="12px"
+              paddingLeft="13px"
               paddingRight="10px"
               paddingTop="28px"
             />
@@ -102,6 +103,7 @@ export default function Home() {
             <div className="input-group">
               <input
                 type="text"
+                placeholder="youremail@email.com"
                 className={`form-control input-sm ${styles.searchBar}`}
               />
               <button

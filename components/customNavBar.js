@@ -4,15 +4,18 @@ import "../styles/Navbar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Form from "react-bootstrap/Form";
-import Button from "react-bootstrap/Button";
+import logo from "../public/logo.png";
 
 export default function CustomNavBar() {
   return (
     <Navbar className="py-4">
       <Container>
         <Navbar.Brand href="/" className="pe-5">
-          <strong>FUN CHEAP SF</strong>
+          <img
+            src={logo}
+            height="30"
+            //className="d-inline-block align-top"
+          />
         </Navbar.Brand>
         <Nav className="me-auto">
           <Nav.Link href="#home">
