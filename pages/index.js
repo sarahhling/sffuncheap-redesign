@@ -1,15 +1,17 @@
 import styles from "../styles/Home.module.css";
+import { useState } from "react"; /*for newsletter modal */
 import CustomNavBar from "../components/customNavBar.js";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import BannerBlock from "../components/bannerBlock.js";
 
 // import Components from "../components/navbar.js"
 
 export default function Home() {
   return (
     <Container className={`w-75 px-5`}>
-      <div className={`${styles.container}`}>
+      <div className="container">
         <Row className="gridRow">
           <Col className="gridCol">
             <CustomNavBar />
@@ -59,25 +61,35 @@ export default function Home() {
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
           <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
-            <div className={` py-4 px-3 ${styles.square}`}>
-              <p>JUST ADDED</p>
-            </div>
+            <BannerBlock
+              color="#1E5276"
+              text="JUST ADDED"
+              paddingLeft="12px"
+              paddingTop="25px"
+            />
           </Col>
           <Col></Col>
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
           <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
-            <div className={`py-3 px-2 ${styles.square}`}>
-              <p>FEATURED THIS MONTH</p>
-            </div>
+            <BannerBlock
+              color="#E1992B"
+              text="FEATURED THIS MONTH"
+              paddingLeft="10px"
+              paddingTop="15px"
+            />
           </Col>
           <Col></Col>
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
           <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
-            <div className={` py-4 px-3 ${styles.square}`}>
-              <p>EVENTS BY TAGS</p>
-            </div>
+            <BannerBlock
+              color="#E07673"
+              text="EVENTS BY TAGS"
+              paddingLeft="12px"
+              paddingRight="10px"
+              paddingTop="28px"
+            />
           </Col>
           <Col></Col>
         </Row>
@@ -117,7 +129,7 @@ export default function Home() {
   );
 }
 
-/*
+/* follow this example to generate event cards
 <Container>
         <>
           {[
