@@ -1,8 +1,10 @@
 .bigBannerText {
   background-color: #CB491D;
   color: white;
-  font-size: 23px;
-}
+  font-size: 36px;
+  line-height: 1.1;
+  height: 300px; 
+padding-top: 60px;}
 
 .about {
   font-size: 14px;
@@ -18,20 +20,20 @@
       font-weight: bold;
 }
 
-.buttonColor { /*might be global*/
+.buttonColor { /*make global*/
   background-color: #1E5276;
   border-radius: 2px;
     height: 25px;
 }
 
-.searchBar { /*might be global*/
+.searchBar { /*make global*/
     background-color: #D9D9D9;
     border-radius: 2px;
       height: 25px;
 
 }
 
-.searchForm {
+.searchForm { /*make global*/
   border-radius: 2px;
   height: 25px;
 }

@@ -11,13 +11,9 @@ export default function CustomNavBar() {
   return (
     <Navbar className="py-4">
       <Container>
-        <Navbar.Brand href="/">
+        <Navbar.Brand href="/" className="pe-5">
           <strong>FUN CHEAP SF</strong>
         </Navbar.Brand>
-        <div>
-          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
-        </div>
         <Nav className="me-auto">
           <Nav.Link href="#home">
             <strong>EVENTS</strong>
@@ -37,7 +33,7 @@ export default function CustomNavBar() {
             <i class="fas fa-search"></i>
           </button>
         </div> */}
-        <div class="input-group">
+        <div class="input-group ps-2">
           <input
             type="text"
             className={`form-control input-sm ${styles.searchBar}`}

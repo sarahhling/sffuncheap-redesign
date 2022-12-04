@@ -6,30 +6,28 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import BannerBlock from "../components/bannerBlock.js";
 
-// import Components from "../components/navbar.js"
-
 export default function Home() {
   return (
     <Container className={`w-75 px-5`}>
-      <div className="container">
+      <div className="containerForm">
         <Row className="gridRow">
           <Col className="gridCol">
             <CustomNavBar />
           </Col>
         </Row>
         <Row className="gridRow">
-          <Col className="gridCol" sm={8} md={8} lg={8} xl={8}>
+          <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
             <img
               src="../public/golden-gate-bridge.jpg"
               alt="golden gate bridge"
             />
           </Col>
           <Col
-            className={`gridCol ps-4 pe-4 py-5 ${styles.bigBannerText}`}
-            sm={4}
-            md={4}
-            lg={4}
-            xl={4}
+            className={`gridCol ${styles.bigBannerText}`}
+            sm={5}
+            md={5}
+            lg={5}
+            xl={5}
           >
             <p className="px-4">
               Find the best cheap events in the bay area all in one place
