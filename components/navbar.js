@@ -1,19 +1,21 @@
 import React from "react";
 import "../styles/Home.module.css";
+import "../styles/Navbar.module.css";
+import { Navbar } from "react-bootstrap";
 
-function Navbar() {
+function NavBar() {
   return (
-    <div className="Navbar">
+    <Navbar>
       <div className="leftSide">
         <div classname="links">
-          <a href="/events">Events</a>
-          <a href="/contact">Contact</a>
-          <a href="/filter">Search</a>
+          <a href="/events">EVENTS</a>
+          <a href="/contact">CONTACT</a>
+          <a href="/filter">FILTER</a>
         </div>
       </div>
       <div className="rightSide"></div>
-    </div>
+    </Navbar>
   );
 }
 
-export default Navbar;
+export default NavBar;

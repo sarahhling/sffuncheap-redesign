@@ -1,9 +1,9 @@
 import "../styles/globals.css";
-import Navbar from "../Components/Navbar";
+import Navbar from "../components/navBar";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function MyApp({ Component, pageProps }) {
   return <Component {...pageProps} />;
-  // return <div className="MyApp"><Navbar /></div>
 }
 
 export default MyApp;
