@@ -1,7 +1,45 @@
-.container {
-  padding: 0 2rem;
+.bigBannerText {
+  background-color: #CB491D;
+  color: white;
+  font-size: 36px;
+  line-height: 1.1;
+  height: 300px; 
+padding-top: 60px;
+padding-left: 16px;}
+
+.about {
+  font-size: 14px;
+  line-height: 1.2;
 }
 
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #582E67;
+    color: white;
+      font-size: 16px;
+      font-weight: bold;
+}
+
+.buttonColor { /*make global*/
+  background-color: #1E5276;
+  border-radius: 2px;
+    height: 25px;
+}
+
+.searchBar { /*make global*/
+    background-color: #D9D9D9;
+    border-radius: 2px;
+      height: 25px;
+
+}
+
+.searchForm { /*make global*/
+  border-radius: 2px;
+  height: 25px;
+}
+
+/*
 .Navbar {
   background-color: #021e39;
   width: 100%;
@@ -158,27 +196,10 @@
   line-height: 1.5;
 }
 
-.logo {
-  height: 1em;
-  margin-left: 0.5rem;
-}
-
 @media (max-width: 600px) {
   .grid {
     width: 100%;
     flex-direction: column;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .card,
-  .footer {
-    border-color: #222;
-  }
-  .code {
-    background: #111;
-  }
-  .logo img {
-    filter: invert(1);
-  }
-}
+ */

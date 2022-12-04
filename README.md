@@ -2,7 +2,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-Follow the steps below to get the repo running locally:
+Follow the steps below to get the repo running locally for the first time:
 clone the repo into a local folder then run `npm install` and `npm run dev`
 
 ```bash

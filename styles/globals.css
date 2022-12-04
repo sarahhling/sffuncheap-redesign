@@ -2,8 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Inter', sans-serif;
 }
 
 a {
@@ -15,12 +14,20 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.gridCol {
+  background-color: white;
+  /*border: 1px solid #ccc;*/
+}
+
+.footer {
+  background-color: #6F90A8;
+}
+
+.searchBackground {
+    background-color: rgb(102, 32, 32);
+}
+
+.containerForm {
+  width: 80%;
+  margin: auto;
 }
