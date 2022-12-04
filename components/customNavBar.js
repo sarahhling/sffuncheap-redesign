@@ -18,13 +18,13 @@ export default function CustomNavBar() {
           />
         </Navbar.Brand>
         <Nav className="me-auto">
-          <Nav.Link href="#home">
+          <Nav.Link href="/">
             <strong>EVENTS</strong>
           </Nav.Link>
-          <Nav.Link href="#features">
+          <Nav.Link href="/contact">
             <strong>CONTACT</strong>
           </Nav.Link>
-          <Nav.Link href="#pricing">
+          <Nav.Link href="/filter">
             <strong>FILTER</strong>
           </Nav.Link>
         </Nav>
