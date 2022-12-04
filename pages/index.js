@@ -15,22 +15,65 @@ export default function Home() {
         </Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col className="gridCol">Banner Pic</Col>
-        <Col className={`gridCol py-5 px-4 ${styles.bannerText}`}>
-          FInd the best cheap events in the bay area all in one place
+        <Col className="gridCol" sm={8} md={8} lg={8} xl={8}>
+          Banner Pic
+        </Col>
+        <Col
+          className={`gridCol ps-4 pe-4 py-5 ${styles.bigBannerText}`}
+          sm={4}
+          md={4}
+          lg={4}
+          xl={4}
+        >
+          Find the best cheap events in the bay area all in one place
+        </Col>
+      </Row>
+      <Row className="justify-content-md-center gridRow pt-4">
+        <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
+          <div className={` py-4 px-2 ${styles.square}`}>
+            <p>WHO ARE WE?</p>
+          </div>
+        </Col>
+        <Col
+          className={`gridCol pt-2 ${styles.about}`}
+          sm={10}
+          md={10}
+          lg={10}
+          xl={10}
+        >
+          Funcheap was started in 2003 as two poor, underemployed San
+          Franciscans, Johnny and Shannon who were sick and tired of trolling
+          through the Guardian, the Weekly, Craigslist and all those fliers on
+          telephone poles on Haight Street just to find out fun and free things
+          to do. So they put together a list for themselves and their friends.
+          10,000 people later, they figured we were on to something! Then Johnny
+          & Shannon decided they might possibly love each other more than free
+          events, started dating and got married. The end.
         </Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col className="gridCol">who</Col>
+        <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
+          <div className={` py-4 px-2 ${styles.square}`}>
+            <p>JUST ADDED</p>
+          </div>
+        </Col>
+        <Col></Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col className="gridCol">added</Col>
+        <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
+          <div className={` py-4 px-2 ${styles.square}`}>
+            <p>FEATURED THIS MONTH</p>
+          </div>
+        </Col>
+        <Col></Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col className="gridCol">featured</Col>
-      </Row>
-      <Row className="justify-content-md-center gridRow">
-        <Col className="gridCol">tags</Col>
+        <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
+          <div className={` py-4 px-2 ${styles.square}`}>
+            <p>WHO ARE WE?</p>
+          </div>
+        </Col>
+        <Col></Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
         <Col className="gridCol">newsletter</Col>

@@ -1,6 +1,21 @@
-.bannerText {
+.bigBannerText {
   background-color: #CB491D;
   color: white;
+  font-size: 23px;
+}
+
+.about {
+  font-size: 14px;
+  line-height: 1.2;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: #582E67;
+    color: white;
+      font-size: 16px;
+      font-weight: bold;
 }
 
 /* .container {
