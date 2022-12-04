@@ -4,7 +4,9 @@ import CustomNavBar from "../components/customNavBar.js";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Image from "react-bootstrap/Image";
 import BannerBlock from "../components/bannerBlock.js";
+import EventCard from "../components/eventCard";
 
 export default function Home() {
   return (
@@ -17,9 +19,10 @@ export default function Home() {
         </Row>
         <Row className="gridRow">
           <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
-            <img
-              src="../public/golden-gate-bridge.jpg"
+            <Image
+              src="https://images.unsplash.com/photo-1521464302861-ce943915d1c3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80"
               alt="golden gate bridge"
+              height={300}
             />
           </Col>
           <Col
