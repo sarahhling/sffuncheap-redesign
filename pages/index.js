@@ -1,5 +1,5 @@
-//import styles from "../styles/Home.module.css";
-import Navbar from "../components/navBar";
+import styles from "../styles/Home.module.css";
+import CustomNavBar from "../components/customNavBar.js";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -9,42 +9,42 @@ import Col from "react-bootstrap/Col";
 export default function Home() {
   return (
     <Container>
-      <Row className="justify-content-md-center gridRow">
-        <Col className="gridCol">Navbar</Col>
-      </Row>
-      <Row className="justify-content-md-center gridRow">
-        <Col sm className="gridCol">
-          Banner
+      <Row className="gridRow">
+        <Col className="gridCol">
+          <CustomNavBar />
         </Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col sm className="gridCol">
-          who
+        <Col className="gridCol">Banner Pic</Col>
+        <Col className={`gridCol py-5 px-4 ${styles.bannerText}`}>
+          FInd the best cheap events in the bay area all in one place
         </Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col sm className="gridCol">
-          added
-        </Col>
+        <Col className="gridCol">who</Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col sm className="gridCol">
-          featured
-        </Col>
+        <Col className="gridCol">added</Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col sm className="gridCol">
-          tags
-        </Col>
+        <Col className="gridCol">featured</Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col sm className="gridCol">
-          newsletter
-        </Col>
+        <Col className="gridCol">tags</Col>
       </Row>
       <Row className="justify-content-md-center gridRow">
-        <Col sm className="gridCol">
-          Footer
+        <Col className="gridCol">newsletter</Col>
+      </Row>
+      <Row className="justify-content-md-center gridRow">
+        <Col className="gridCol footer pt-3">
+          <p className="text-center footer">
+            <strong class="footer">FOOTER</strong>
+          </p>
+        </Col>
+        <Col className="gridCol footer pt-3">
+          <p className="text-center footer">
+            <strong class="footer">SOCIAL MEDIA LINKS</strong>
+          </p>
         </Col>
       </Row>
     </Container>

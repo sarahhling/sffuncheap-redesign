@@ -1,7 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import Navbar from "../components/navBar";
+//import Navbar from "../components/navBar";
 // import Components from "../components/navbar.js"
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p> */}
         <div>
-          <Navbar></Navbar>
+          //<Navbar></Navbar>
         </div>
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>

@@ -12,14 +12,17 @@ a {
 
 * {
   box-sizing: border-box;
-  background-color: grey;
 }
 
 .gridCol {
   background-color: white;
-  border-color: black;
+  /*border: 1px solid #ccc;*/
 }
 
-.gridRow {
-  width: 80%;
+.footer {
+  background-color: #6F90A8;
+}
+
+.searchBackground {
+    background-color: rgb(102, 32, 32);
 }

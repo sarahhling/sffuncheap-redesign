@@ -1,4 +1,9 @@
-.container {
+.bannerText {
+  background-color: #CB491D;
+  color: white;
+}
+
+/* .container {
   padding: 0 2rem;
 }
 
@@ -164,4 +169,4 @@
     flex-direction: column;
   }
 }
-
+ */
