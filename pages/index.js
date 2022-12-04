@@ -51,42 +51,58 @@ export default function Home() {
           events, started dating and got married. The end.
         </Col>
       </Row>
-      <Row className="justify-content-md-center gridRow">
+      <Row className="justify-content-md-center gridRow pt-4">
         <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
-          <div className={` py-4 px-2 ${styles.square}`}>
+          <div className={` py-4 px-3 ${styles.square}`}>
             <p>JUST ADDED</p>
           </div>
         </Col>
         <Col></Col>
       </Row>
-      <Row className="justify-content-md-center gridRow">
+      <Row className="justify-content-md-center gridRow pt-4">
         <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
-          <div className={` py-4 px-2 ${styles.square}`}>
+          <div className={`py-3 px-2 ${styles.square}`}>
             <p>FEATURED THIS MONTH</p>
           </div>
         </Col>
         <Col></Col>
       </Row>
-      <Row className="justify-content-md-center gridRow">
+      <Row className="justify-content-md-center gridRow pt-4">
         <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
-          <div className={` py-4 px-2 ${styles.square}`}>
-            <p>WHO ARE WE?</p>
+          <div className={` py-4 px-3 ${styles.square}`}>
+            <p>EVENTS BY TAGS</p>
           </div>
         </Col>
         <Col></Col>
       </Row>
-      <Row className="justify-content-md-center gridRow">
-        <Col className="gridCol">newsletter</Col>
+      <Row className="justify-content-md-center gridRow pt-4">
+        <Col className="gridCol ps-3 pt-2" sm={5} md={5} lg={5} xl={5}>
+          <strong>SIGN UP FOR OUR NEWSLETTER</strong>
+        </Col>
+        <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
+          <div className="input-group">
+            <input
+              type="text"
+              className={`form-control input-sm ${styles.searchBar}`}
+            />
+            <button
+              className={`btn btn-primary py-0 ${styles.buttonColor}`}
+              type="button"
+            >
+              <strong>SUBMIT</strong>
+            </button>
+          </div>
+        </Col>
       </Row>
-      <Row className="justify-content-md-center gridRow">
+      <Row className="justify-content-md-center gridRow pt-5">
         <Col className="gridCol footer pt-3">
           <p className="text-center footer">
-            <strong class="footer">FOOTER</strong>
+            <strong className="footer">FOOTER</strong>
           </p>
         </Col>
         <Col className="gridCol footer pt-3">
           <p className="text-center footer">
-            <strong class="footer">SOCIAL MEDIA LINKS</strong>
+            <strong className="footer">SOCIAL MEDIA LINKS</strong>
           </p>
         </Col>
       </Row>

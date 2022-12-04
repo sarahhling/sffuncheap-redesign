@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/Home.module.css";
+import styles from "../styles/Home.module.css";
 import "../styles/Navbar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
@@ -9,7 +9,7 @@ import Button from "react-bootstrap/Button";
 
 export default function CustomNavBar() {
   return (
-    <Navbar className="pt-4">
+    <Navbar className="py-4">
       <Container>
         <Navbar.Brand href="/">
           <strong>FUN CHEAP SF</strong>
@@ -38,12 +38,18 @@ export default function CustomNavBar() {
           </button>
         </div> */}
         <div class="input-group">
-          <input type="text" className="form-control input-sm" />
-          <button class="btn btn-primary" type="button">
+          <input
+            type="text"
+            className={`form-control input-sm ${styles.searchBar}`}
+          />
+          <button
+            className={`btn btn-primary pt-0 ${styles.buttonColor}`}
+            type="button"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
+              width="18"
+              height="18"
               fill="currentColor"
               class="bi bi-search"
               viewBox="0 0 16 16"

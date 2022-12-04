@@ -18,6 +18,24 @@
       font-weight: bold;
 }
 
+.buttonColor { /*might be global*/
+  background-color: #1E5276;
+  border-radius: 2px;
+    height: 25px;
+}
+
+.searchBar { /*might be global*/
+    background-color: #D9D9D9;
+    border-radius: 2px;
+      height: 25px;
+
+}
+
+.searchForm {
+  border-radius: 2px;
+  height: 25px;
+}
+
 /* .container {
   padding: 0 2rem;
 }
