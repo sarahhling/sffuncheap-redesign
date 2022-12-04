@@ -36,10 +36,11 @@
   height: 25px;
 }
 
-/* .container {
-  padding: 0 2rem;
+.container {
+  width: 85%;
+  margin: auto;
 }
-
+/*
 .Navbar {
   background-color: #021e39;
   width: 100%;
