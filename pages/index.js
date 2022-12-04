@@ -8,15 +8,18 @@ import Col from "react-bootstrap/Col";
 
 export default function Home() {
   return (
-    <Container>
+    <Container className="px-5 w-75">
       <Row className="gridRow">
         <Col className="gridCol">
           <CustomNavBar />
         </Col>
       </Row>
-      <Row className="justify-content-md-center gridRow">
+      <Row className="gridRow">
         <Col className="gridCol" sm={8} md={8} lg={8} xl={8}>
-          Banner Pic
+          <img
+            src="../public/golden-gate-bridge.jpg"
+            alt="golden gate bridge"
+          />
         </Col>
         <Col
           className={`gridCol ps-4 pe-4 py-5 ${styles.bigBannerText}`}
@@ -25,7 +28,9 @@ export default function Home() {
           lg={4}
           xl={4}
         >
-          Find the best cheap events in the bay area all in one place
+          <p className="px-4">
+            Find the best cheap events in the bay area all in one place
+          </p>
         </Col>
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
