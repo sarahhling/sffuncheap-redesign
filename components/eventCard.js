@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Home.module.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Link from "next/link";
 
 export default function EventCard({ date, pic, title }) {
   const divStyle = {
@@ -38,14 +39,14 @@ export default function EventCard({ date, pic, title }) {
   return (
     <Col md="auto">
       <p style={dateStyle}>{date}</p>
-      <a href="/eventDetails">
+      <Link href="/eventDetails">
         <div style={divStyle}>
           <div style={titleStyle}>
             <p>{title}</p>
           </div>
           <img src={pic} style={imgStyle} className={`${styles.eventCard}`} />
         </div>
-      </a>
+      </Link>
     </Col>
 
     // <div className="bg-image hover-overlay">

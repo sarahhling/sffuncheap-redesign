@@ -141,12 +141,14 @@ export default function eventDetails() {
               <Image
                 src="images/christmas-pair.png"
                 className={`${styles.eventPic}`}
+                alt="christmas people"
               />
             </Col>
             <Col>
               <Image
                 src="images/christmas-pandemic-street.png"
                 className={`${styles.eventPic}`}
+                alt="christmas masked street"
               />
             </Col>
           </Row>
@@ -155,6 +157,7 @@ export default function eventDetails() {
               <Image
                 src="images/christmas-pandemic.png"
                 className={`${styles.eventPic}`}
+                alt="christmas masked"
               />
             </Col>
           </Row>
