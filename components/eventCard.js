@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function EventCard({ date, pic, title }) {
   const divStyle = {
@@ -44,7 +45,13 @@ export default function EventCard({ date, pic, title }) {
           <div style={titleStyle}>
             <p>{title}</p>
           </div>
-          <img src={pic} style={imgStyle} className={`${styles.eventCard}`} />
+          <Image
+            src={pic}
+            style={imgStyle}
+            className={`${styles.eventCard}`}
+            width="145"
+            height="145"
+          />
         </div>
       </Link>
     </Col>

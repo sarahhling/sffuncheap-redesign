@@ -94,22 +94,22 @@ export default function Home() {
         <EventCard
           title="Art Walk SF Block Party"
           date="JAN 12"
-          pic="images/crosswalk-painted.jpg"
+          pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="2022 World Cup Semi-Finals Watch Party"
           date="DEC 14"
-          pic="images/crowd.jpg"
+          pic="/images/crowd.jpg"
         />
         <EventCard
           title="Noise Pop's Holiday Party"
           date="DEC 21"
-          pic="images/crowd-concert.jpg"
+          pic="/images/crowd-concert.jpg"
         />
         <EventCard
           title="$6 Drive-In Movie Night"
           date="DEC 27 "
-          pic="images/billboard-blank.jpg"
+          pic="/images/billboard-blank.jpg"
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
@@ -124,22 +124,22 @@ export default function Home() {
         <EventCard
           title="SF Arcade Free Game Night"
           date="DEC 5"
-          pic="images/neon-club-arcade.jpg"
+          pic="/images/neon-club-arcade.jpg"
         />
         <EventCard
           title="Let's glow SF"
           date="DEC 2"
-          pic="images/christmas-icicle-building.jpg"
+          pic="/images/christmas-icicle-building.jpg"
         />
         <EventCard
           title="SF's Winterfest Beer & Comedy Hour"
           date="DEC 18"
-          pic="images/beer-fireplace.jpg"
+          pic="/images/beer-fireplace.jpg"
         />
         <EventCard
           title="SF Symphony 'The Colors of Christmas' Live"
           date="DEC 6"
-          pic="images/christmas-organ.png"
+          pic="/images/christmas-organ.png"
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
@@ -154,22 +154,22 @@ export default function Home() {
         <EventCard
           title="Art Walk SF Block Party"
           date="DEC 1"
-          pic="images/crosswalk-painted.jpg"
+          pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="Oakland Comedy Night"
           date="DEC 8"
-          pic="images/comedyClub.jpg"
+          pic="/images/comedyClub.jpg"
         />
         <EventCard
           title="Grace Cathedral’s “A Cathedral Christmas”"
           date="DEC 18"
-          pic="images/christmas-cathedral-tree.jpg"
+          pic="/images/christmas-cathedral-tree.jpg"
         />
         <EventCard
           title="37th Annual NYE Japanese Ringing Ceremony"
           date="Dec 31"
-          pic="images/bell-giant-asian.jpg"
+          pic="/images/bell-giant-asian.jpg"
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
@@ -185,22 +185,22 @@ export default function Home() {
         <EventCard
           title="Hayes Valley 32nd Holiday Stroll"
           date="DEC 2"
-          pic="images/christmas-lights-walkway.jpg"
+          pic="/images/christmas-lights-walkway.jpg"
         />
         <EventCard
           title="Grace Cathedral’s “A Cathedral Christmas”"
           date="DEC 18"
-          pic="images/christmas-cathedral-tree.jpg"
+          pic="/images/christmas-cathedral-tree.jpg"
         />
         <EventCard
           title="Golden Gate Park Jazz Concert"
           date="DEC 27 "
-          pic="images/outdoor-concert-palace.png"
+          pic="/images/outdoor-concert-palace.png"
         />
         <EventCard
           title="'Pay-what-you-can' Taco Day"
           date="DEC 1"
-          pic="images/food-tacos.jpg"
+          pic="/images/food-tacos.jpg"
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-0">

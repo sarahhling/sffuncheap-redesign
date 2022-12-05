@@ -4,13 +4,14 @@ import "../styles/Navbar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
+import Image from "next/image";
 
 export default function CustomNavBar() {
   return (
     <Navbar className="py-4">
       <Container>
         <Navbar.Brand href="/" className="pe-5 ps-2">
-          <img src="/images/newlogo.png" height="35" />
+          <Image src="/images/newlogo.png" height="35" width={160} />
         </Navbar.Brand>
         <Nav className="me-auto ps-4">
           <Nav.Link href="/">
