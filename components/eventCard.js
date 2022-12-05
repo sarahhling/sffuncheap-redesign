@@ -51,6 +51,7 @@ export default function EventCard({ date, pic, title }) {
             className={`${styles.eventCard}`}
             width="145"
             height="145"
+            alt="event image"
           />
         </div>
       </Link>
