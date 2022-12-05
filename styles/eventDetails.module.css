@@ -1,0 +1,13 @@
+.title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.1;
+}
+
+.quickDetails {
+    border: 3px solid;
+}
+
+.eventPic {
+    max-width: 100%;
+}

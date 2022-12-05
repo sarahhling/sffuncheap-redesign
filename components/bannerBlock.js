@@ -1,6 +1,4 @@
 import React from "react";
-import styles from "../styles/Home.module.css";
-import "../styles/Navbar.module.css";
 
 export default function BannerBlock({
   paddingTop,

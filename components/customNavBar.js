@@ -4,27 +4,22 @@ import "../styles/Navbar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import logo from "../public/logo.png";
 
 export default function CustomNavBar() {
   return (
     <Navbar className="py-4">
       <Container>
-        <Navbar.Brand href="/" className="pe-5">
-          <img
-            src={logo}
-            height="30"
-            //className="d-inline-block align-top"
-          />
+        <Navbar.Brand href="/" className="pe-5 ps-2">
+          <img src="/images/newlogo.png" height="35" />
         </Navbar.Brand>
-        <Nav className="me-auto">
+        <Nav className="me-auto ps-4">
           <Nav.Link href="/">
             <strong>EVENTS</strong>
           </Nav.Link>
-          <Nav.Link href="/contact">
+          <Nav.Link href="/contact" className="ps-4">
             <strong>CONTACT</strong>
           </Nav.Link>
-          <Nav.Link href="/filter">
+          <Nav.Link href="/filter" className="ps-4 pe-2">
             <strong>FILTER</strong>
           </Nav.Link>
         </Nav>
