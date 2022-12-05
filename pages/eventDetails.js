@@ -25,7 +25,7 @@ export default function eventDetails() {
             />
           </Col>
         </Row>
-        <Row className="justify-content-md-center gridRow pt-4">
+        <Row className="justify-content-md-center gridRow pt-4 pe-4">
           <Col className={`px-5 ${styles.title}`} sm={7} md={7} lg={7} xl={7}>
             GOLDEN GATE PARK’S HOLIDAY TREE LIGHTING + OUTDOOR CONCERT
           </Col>
@@ -34,15 +34,15 @@ export default function eventDetails() {
             <Tag tag="SAN FRANCISCO" color="#E07673"></Tag>
             <Tag tag="NEAR BUS" color="#582E67"></Tag>
             <Tag tag="FREE" color="#1E5276"></Tag>
-            <Tag tag="PARKS & REC" color="green"></Tag>
+            <Tag tag="PARKS & REC" color="#E1992B"></Tag>
             <Tag tag="KIDS & FAMILY" color="#E07673"></Tag>
           </Col>
         </Row>
-        <Row className="justify-content-md-center gridRow pt-4">
+        <Row className="justify-content-md-center gridRow pt-4 pe-5">
           <Col className={`ps-5 pe-0`} sm={7} md={7} lg={7} xl={7}>
             <Image
               src="images/christmas-normal-tree.jpg"
-              alt="golden gate bridge"
+              alt="holiday tree"
               className={`${styles.eventPic}`}
             />
           </Col>
@@ -53,7 +53,7 @@ export default function eventDetails() {
             lg={5}
             xl={5}
           >
-            <div>
+            <div className={`ps-4 py-4`}>
               <div className={`${styles.quickDetailItem}`}>
                 <strong>DATE: </strong> December 1st 2022
               </div>
