@@ -67,7 +67,13 @@ padding-left: 16px;}
 
 .eventCard {
   padding: 0;
+  /* opacity: 0.9; */
 }
+
+.eventCard:hover {
+  opacity: 0.3;
+}
+
 
 /*
 .Navbar {

@@ -11,10 +11,7 @@ export default function EventCard({ date, pic, title }) {
     fontSize: "12px",
     fontWeight: "bold",
     position: "relative",
-  };
-
-  const imgStyle = {
-    maxWidth: "100%",
+    backgroundColor: "black",
   };
 
   const dateStyle = {
@@ -32,15 +29,23 @@ export default function EventCard({ date, pic, title }) {
     left: "0",
     fontSize: "15px",
     textShadow: "4px 3px 8px rgba(52, 52, 52, 1)",
+    color: "white",
   };
 
+  const imgStyle = {
+    maxWidth: "100%",
+  };
   return (
     <Col md="auto">
       <p style={dateStyle}>{date}</p>
-      <div style={divStyle}>
-        <p style={titleStyle}>{title}</p>
-        <img src={pic} style={imgStyle}></img>
-      </div>
+      <a href="/eventDetails">
+        <div style={divStyle}>
+          <div style={titleStyle}>
+            <p>{title}</p>
+          </div>
+          <img src={pic} style={imgStyle} className={`${styles.eventCard}`} />
+        </div>
+      </a>
     </Col>
 
     // <div className="bg-image hover-overlay">
