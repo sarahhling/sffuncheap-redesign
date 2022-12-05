@@ -39,6 +39,11 @@ padding-left: 16px;}
   height: 25px;
 }
 
+.messageForm { /*make global*/
+  border-radius: 2px;
+  height: 500px;
+}
+
 /*
 .Navbar {
   background-color: #021e39;
