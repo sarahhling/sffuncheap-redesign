@@ -10,7 +10,6 @@ export default function EventCard({ date, pic, title }) {
     color: "white",
     fontSize: "12px",
     fontWeight: "bold",
-    backgroundColor: "red",
     position: "relative",
   };
 
@@ -26,11 +25,12 @@ export default function EventCard({ date, pic, title }) {
 
   const titleStyle = {
     position: "absolute",
-    paddingLeft: "14px",
+    paddingLeft: "12px",
+    paddingRight: "5px",
     paddingBottom: "0px",
     bottom: "0",
     left: "0",
-    fontSize: "14px",
+    fontSize: "15px",
     textShadow: "4px 3px 8px rgba(52, 52, 52, 1)",
   };
 
