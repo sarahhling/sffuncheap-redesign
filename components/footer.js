@@ -1,6 +1,5 @@
 import React from "react";
 import "../styles/Home.module.css";
-import "../styles/Navbar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";

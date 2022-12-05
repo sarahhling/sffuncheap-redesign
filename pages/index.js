@@ -20,8 +20,7 @@ export default function Home() {
         <Row className="gridRow">
           <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
             <Image
-              src="https://images.unsplash.com/photo-1521464302861-ce943915d1c3?ixlib=rb-4.0.3&ixid=&auto=format&fit=crop&w=2671&q=80"
-              //src="golden-gate-bridge.png"
+              src="images/golden-gate-bridge.png"
               alt="golden gate bridge"
               height={300}
             />
@@ -100,14 +99,14 @@ export default function Home() {
             <strong>SIGN UP FOR OUR NEWSLETTER</strong>
           </Col>
           <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
-            <div className="input-group">
+            <div className="input-group pt-2 pe-5">
               <input
                 type="text"
                 placeholder="youremail@email.com"
                 className={`form-control input-sm ${styles.searchBar}`}
               />
               <button
-                className={`btn btn-primary py-0 ${styles.buttonColor}`}
+                className={`btn btn-primary py-0 px-3 ${styles.buttonColor}`}
                 type="button"
               >
                 <strong>SUBMIT</strong>
