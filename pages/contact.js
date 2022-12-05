@@ -5,6 +5,7 @@ import CustomNavBar from "../components/customNavBar.js";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Dropdown from "react-bootstrap/Dropdown";
+import styles from "../styles/Home.module.css";
 
 export default function ContactUs() {
   return (
@@ -47,7 +48,13 @@ export default function ContactUs() {
 
             <Form.Group className="mb-3" controlId="formBasicMessage">
               <Form.Label>Message*</Form.Label>
-              <Form.Control type="message" placeholder="Message" />
+              {/* <Form.Control type="message" placeholder="Enter message" />
+               */}
+               <input
+                type="text"
+                placeholder="Enter message"
+                className={`form-control input-sm ${styles.messageForm}`}
+              />
             </Form.Group>
             <Button variant="primary" type="submit">
               Submit
