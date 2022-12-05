@@ -15,7 +15,7 @@ export default function BannerBlock({
     paddingTop: `${paddingTop}`,
     backgroundColor: `${color}`,
     color: "white",
-    fontSize: "24px",
+    fontSize: "22px",
     fontWeight: "bold",
   };
 

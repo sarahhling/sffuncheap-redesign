@@ -1,14 +1,17 @@
 import React from "react";
 import styles from "../styles/Home.module.css";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function EventCard({ date, pic, title }) {
   const divStyle = {
-    width: "150px",
-    height: "150px",
+    width: "145px",
+    height: "145px",
     color: "white",
     fontSize: "12px",
     fontWeight: "bold",
     backgroundColor: "red",
+    paddingTop: "0px",
   };
 
   const dateDivStyle = {
@@ -17,14 +20,22 @@ export default function EventCard({ date, pic, title }) {
   };
 
   return (
-    // <div>
-    //   <p>{date}</p>
-    // </div>
-    <div style={divStyle}>
-      <p>{title}</p>
-      <p>{date}</p>
-      <img src={pic}></img>
+    <div>
+      <Row>
+        <Col className="">
+          <p style={dateDivStyle}>{date}</p>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div style={divStyle}>
+            <p>{title}</p>
+            <img src={pic}></img>
+          </div>
+        </Col>
+      </Row>
     </div>
+
     // <div className="bg-image hover-overlay">
     //   <img src={pic} className="img-fluid" />
     //   <a href="/eventDetails">

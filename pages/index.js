@@ -47,7 +47,7 @@ export default function Home() {
             />
           </Col>
           <Col
-            className={`gridCol pt-2 ${styles.about}`}
+            className={`gridCol px-0 pt-2 ${styles.about}`}
             sm={10}
             md={9}
             lg={9}
@@ -63,8 +63,8 @@ export default function Home() {
             more than free events, started dating and got married. The end.
           </Col>
         </Row>
-        <Row className="justify-content-md-center gridRow pt-4">
-          <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
+        <Row className="justify-content-md-center gridRow pt-5">
+          <Col className="gridCol" sm={2} md={2} lg={2} xl={2}>
             <BannerBlock
               color="#1E5276"
               text="JUST ADDED"
@@ -73,18 +73,20 @@ export default function Home() {
             />
           </Col>
           <Col>
-            <Col>
-              <EventCard title="WHO ARE WE?" />
-            </Col>
-            <Col>
-              <EventCard title="WHO ARE WE?" />
-            </Col>
-            <Col>
-              <EventCard title="WHO ARE WE?" />
-            </Col>
-            <Col>
-              <EventCard title="WHO ARE WE?" />
-            </Col>
+            <Row className="ps-4">
+              <Col className={`${styles.eventCard}`}>
+                <EventCard title="WHO ARE WE?" date="DEC 1" />
+              </Col>
+              <Col className={`${styles.eventCard}`}>
+                <EventCard title="WHO ARE WE?" />
+              </Col>
+              <Col className={`${styles.eventCard}`}>
+                <EventCard title="WHO ARE WE?" />
+              </Col>
+              <Col className={`${styles.eventCard}`}>
+                <EventCard title="WHO ARE WE?" />
+              </Col>
+            </Row>
           </Col>
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
