@@ -31,11 +31,11 @@ export default function eventDetails() {
           </Col>
           <Col sm={5} md={5} lg={5} xl={5}>
             <div style={{ fontWeight: "bold", fontSize: "14px" }}>TAGS</div>
-            <Tag tag="SAN FRANCISCO" color="#E07673"></Tag>
-            <Tag tag="NEAR BUS" color="#582E67"></Tag>
-            <Tag tag="FREE" color="#1E5276"></Tag>
-            <Tag tag="PARKS & REC" color="#E1992B"></Tag>
-            <Tag tag="KIDS & FAMILY" color="#E07673"></Tag>
+            <Tag tag="SAN FRANCISCO" color="#E07673" size="16px"></Tag>
+            <Tag tag="NEAR BUS" color="#582E67" size="16px"></Tag>
+            <Tag tag="FREE" color="#1E5276" size="16px"></Tag>
+            <Tag tag="PARKS & REC" color="#E1992B" size="16px"></Tag>
+            <Tag tag="KIDS & FAMILY" color="#E07673" size="16px"></Tag>
           </Col>
         </Row>
         <Row className="justify-content-md-center gridRow pt-4 pe-5">

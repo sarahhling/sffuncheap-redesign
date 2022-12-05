@@ -6,9 +6,34 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import BannerBlock from "../components/bannerBlock.js";
-import EventCard from "../components/eventCard";
-
+import EventCard from "../components/eventCard.js";
+import TagChunks from "../components/tagChunks.js";
+import Tag from "../components/tag.js";
 export default function Home() {
+  const tags1 = [
+    <Tag tag="SAN FRANCISCO" color="#E07673" size="12px" key="1"></Tag>,
+    <Tag tag="KIDS & FAMILY" color="#582E67" size="12px" key="2"></Tag>,
+    <Tag tag="FREE" color="#1E5276" size="12px" key="3"></Tag>,
+  ];
+
+  const tags2 = [
+    <Tag tag="CHEAP" color="#CB491D" size="12x" key="1"></Tag>,
+    <Tag tag="SHOPPING" color="#582E67" size="12px" key="2"></Tag>,
+    <Tag tag="EAST BAY" color="#1E5276" size="12px" key="3"></Tag>,
+  ];
+
+  const tags3 = [
+    <Tag tag="SAN FRANCISCO" color="#E07673" size="11px" key="1"></Tag>,
+    <Tag tag="FREE" color="#1E5276" size="11px" key="3"></Tag>,
+    <Tag tag="NEAR BUS" color="#582E67" size="10.5px" key="2"></Tag>,
+    <Tag tag="PARKS & REC" color="#E1992B" size="11px" key="3"></Tag>,
+  ];
+
+  const tags4 = [
+    <Tag tag="CHEAP" color="#CB491D" size="12px" key="1"></Tag>,
+    <Tag tag="EAT & DRINKS" color="#582E67" size="12px" key="2"></Tag>,
+    <Tag tag="SAN FRANCISCO" color="#1E5276" size="12px" key="3"></Tag>,
+  ];
   return (
     <Container className={`w-75 px-5`}>
       <div className="containerForm">
@@ -43,7 +68,7 @@ export default function Home() {
               color="#582E67"
               text="WHO ARE WE?"
               paddingLeft="16px"
-              paddingTop="38px"
+              paddingTop="45px"
             />
           </Col>
           <Col
@@ -63,54 +88,140 @@ export default function Home() {
             more than free events, started dating and got married. The end.
           </Col>
         </Row>
-        <Row className="justify-content-md-center gridRow pt-5">
-          <Col className="gridCol" sm={2} md={2} lg={2} xl={2}>
+        <Row className="justify-content-md-center gridRow pt-4">
+          <Col className="gridCol">
             <BannerBlock
               color="#1E5276"
               text="JUST ADDED"
               paddingLeft="19px"
-              paddingTop="40px"
+              paddingTop="55px"
             />
           </Col>
-          <Col>
-            <Row className="ps-4">
-              <Col className={`${styles.eventCard}`}>
-                <EventCard title="WHO ARE WE?" date="DEC 1" />
-              </Col>
-              <Col className={`${styles.eventCard}`}>
-                <EventCard title="WHO ARE WE?" />
-              </Col>
-              <Col className={`${styles.eventCard}`}>
-                <EventCard title="WHO ARE WE?" />
-              </Col>
-              <Col className={`${styles.eventCard}`}>
-                <EventCard title="WHO ARE WE?" />
-              </Col>
-            </Row>
-          </Col>
+          <EventCard
+            title="Art Walk SF Block Party"
+            date="DEC 1"
+            pic="images/crosswalk-painted.jpg"
+          />
+          <EventCard
+            title="2022 World Cup Semi-Finals Watch Party"
+            date="DEC 14"
+            pic="images/crowd.jpg"
+          />
+          <EventCard
+            title="Grace Cathedral's “A Cathedral Christmas”"
+            date="DEC 18"
+            pic="images/christmas-cathedral-tree.jpg"
+          />
+          <EventCard
+            title="$6 Drive-In Movie Night"
+            date="DEC 27 "
+            pic="images/billboard-blank.jpg"
+          />
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
-          <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
+          <Col className="gridCol pt-2">
             <BannerBlock
               color="#E1992B"
               text="FEATURED THIS MONTH"
-              paddingLeft="12px"
+              paddingLeft="15px"
+              paddingTop="35px"
+            />
+          </Col>
+          <EventCard
+            title="Art Walk SF Block Party"
+            date="DEC 1"
+            pic="images/crosswalk-painted.jpg"
+          />
+          <EventCard
+            title="2022 World Cup Semi-Finals Watch Party"
+            date="DEC 14"
+            pic="images/crowd.jpg"
+          />
+          <EventCard
+            title="Grace Cathedral’s “A Cathedral Christmas”"
+            date="DEC 18"
+            pic="images/christmas-cathedral-tree.jpg"
+          />
+          <EventCard
+            title="$6 Drive-In Movie Night"
+            date="DEC 27 "
+            pic="images/billboard-blank.jpg"
+          />
+        </Row>
+        <Row className="justify-content-md-center gridRow pt-4">
+          <Col className="gridCol pt-2">
+            <BannerBlock
+              color="white"
+              text=""
+              paddingLeft="15px"
               paddingTop="25px"
             />
           </Col>
-          <Col></Col>
+          <EventCard
+            title="Art Walk SF Block Party"
+            date="DEC 1"
+            pic="images/crosswalk-painted.jpg"
+          />
+          <EventCard
+            title="2022 World Cup Semi-Finals Watch Party"
+            date="DEC 14"
+            pic="images/crowd.jpg"
+          />
+          <EventCard
+            title="Grace Cathedral’s “A Cathedral Christmas”"
+            date="DEC 18"
+            pic="images/christmas-cathedral-tree.jpg"
+          />
+          <EventCard
+            title="$6 Drive-In Movie Night"
+            date="DEC 27 "
+            pic="images/billboard-blank.jpg"
+          />
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
-          <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
+          <Col className="gridCol pt-2">
             <BannerBlock
               color="#E07673"
               text="EVENTS BY TAGS"
               paddingLeft="18px"
               paddingRight="10px"
-              paddingTop="35px"
+              paddingTop="50px"
             />
           </Col>
-          <Col></Col>
+          <EventCard
+            title="2022 World Cup Semi-Finals Watch Party"
+            date="DEC 14"
+            pic="images/crowd.jpg"
+          />
+          <EventCard
+            title="Grace Cathedral’s “A Cathedral Christmas”"
+            date="DEC 18"
+            pic="images/christmas-cathedral-tree.jpg"
+          />
+          <EventCard
+            title="$6 Drive-In Movie Night"
+            date="DEC 27 "
+            pic="images/billboard-blank.jpg"
+          />
+          <EventCard
+            title="Art Walk SF Block Party"
+            date="DEC 1"
+            pic="images/crosswalk-painted.jpg"
+          />
+        </Row>
+        <Row className="justify-content-md-center gridRow pt-0">
+          <Col className="gridCol pt-2">
+            <BannerBlock
+              color="white"
+              text=""
+              paddingLeft="15px"
+              paddingTop="25px"
+            />
+          </Col>
+          <TagChunks tags={tags1} />
+          <TagChunks tags={tags2} />
+          <TagChunks tags={tags3} />
+          <TagChunks tags={tags4} />
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
           <Col className="gridCol ps-3 pt-2" sm={5} md={5} lg={5} xl={5}>

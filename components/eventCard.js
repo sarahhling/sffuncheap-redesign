@@ -11,30 +11,37 @@ export default function EventCard({ date, pic, title }) {
     fontSize: "12px",
     fontWeight: "bold",
     backgroundColor: "red",
-    paddingTop: "0px",
+    position: "relative",
   };
 
-  const dateDivStyle = {
+  const imgStyle = {
+    maxWidth: "100%",
+  };
+
+  const dateStyle = {
     color: "black",
     fontWeight: "bold",
+    margin: "0px",
+  };
+
+  const titleStyle = {
+    position: "absolute",
+    paddingLeft: "14px",
+    paddingBottom: "0px",
+    bottom: "0",
+    left: "0",
+    fontSize: "14px",
+    textShadow: "4px 3px 8px rgba(52, 52, 52, 1)",
   };
 
   return (
-    <div>
-      <Row>
-        <Col className="">
-          <p style={dateDivStyle}>{date}</p>
-        </Col>
-      </Row>
-      <Row>
-        <Col>
-          <div style={divStyle}>
-            <p>{title}</p>
-            <img src={pic}></img>
-          </div>
-        </Col>
-      </Row>
-    </div>
+    <Col md="auto">
+      <p style={dateStyle}>{date}</p>
+      <div style={divStyle}>
+        <p style={titleStyle}>{title}</p>
+        <img src={pic} style={imgStyle}></img>
+      </div>
+    </Col>
 
     // <div className="bg-image hover-overlay">
     //   <img src={pic} className="img-fluid" />

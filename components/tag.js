@@ -2,11 +2,11 @@ import React from "react";
 import "../styles/Home.module.css";
 import Container from "react-bootstrap/Container";
 
-export default function Tag({ tag, color }) {
+export default function Tag({ tag, color, size }) {
   const divStyle = {
     backgroundColor: `${color}`,
     color: "white",
-    fontSize: "16px",
+    fontSize: `${size}`,
     fontWeight: "500",
     borderRadius: "6px",
     display: "inline-block",

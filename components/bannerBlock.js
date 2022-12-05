@@ -9,7 +9,7 @@ export default function BannerBlock({
 }) {
   const divStyle = {
     width: "150px",
-    height: "150px",
+    height: "170px",
     paddingLeft: `${paddingLeft}`,
     paddingRight: `${paddingRight}`,
     paddingTop: `${paddingTop}`,
