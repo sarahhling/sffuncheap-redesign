@@ -8,14 +8,14 @@ export default function BannerBlock({
   text,
 }) {
   const divStyle = {
-    width: "100px",
-    height: "100px",
+    width: "150px",
+    height: "150px",
     paddingLeft: `${paddingLeft}`,
     paddingRight: `${paddingRight}`,
     paddingTop: `${paddingTop}`,
     backgroundColor: `${color}`,
     color: "white",
-    fontSize: "16px",
+    fontSize: "24px",
     fontWeight: "bold",
   };
 

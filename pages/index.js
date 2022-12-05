@@ -38,17 +38,20 @@ export default function Home() {
           </Col>
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
-          <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
-            <div className={` py-4 px-3 ${styles.square}`}>
-              <p>WHO ARE WE?</p>
-            </div>
+          <Col className="gridCol pt-2" sm={2} md={3} lg={3} xl={3}>
+            <BannerBlock
+              color="#582E67"
+              text="WHO ARE WE?"
+              paddingLeft="16px"
+              paddingTop="38px"
+            />
           </Col>
           <Col
             className={`gridCol pt-2 ${styles.about}`}
             sm={10}
-            md={10}
-            lg={10}
-            xl={10}
+            md={9}
+            lg={9}
+            xl={9}
           >
             Funcheap was started in 2003 as two poor, underemployed San
             Franciscans, Johnny and Shannon who were sick and tired of trolling
@@ -65,19 +68,32 @@ export default function Home() {
             <BannerBlock
               color="#1E5276"
               text="JUST ADDED"
-              paddingLeft="16px"
-              paddingTop="25px"
+              paddingLeft="19px"
+              paddingTop="40px"
             />
           </Col>
-          <Col></Col>
+          <Col>
+            <Col>
+              <EventCard title="WHO ARE WE?" />
+            </Col>
+            <Col>
+              <EventCard title="WHO ARE WE?" />
+            </Col>
+            <Col>
+              <EventCard title="WHO ARE WE?" />
+            </Col>
+            <Col>
+              <EventCard title="WHO ARE WE?" />
+            </Col>
+          </Col>
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
           <Col className="gridCol pt-2" sm={2} md={2} lg={2} xl={2}>
             <BannerBlock
               color="#E1992B"
               text="FEATURED THIS MONTH"
-              paddingLeft="10px"
-              paddingTop="15px"
+              paddingLeft="12px"
+              paddingTop="25px"
             />
           </Col>
           <Col></Col>
@@ -87,9 +103,9 @@ export default function Home() {
             <BannerBlock
               color="#E07673"
               text="EVENTS BY TAGS"
-              paddingLeft="13px"
+              paddingLeft="18px"
               paddingRight="10px"
-              paddingTop="28px"
+              paddingTop="35px"
             />
           </Col>
           <Col></Col>
