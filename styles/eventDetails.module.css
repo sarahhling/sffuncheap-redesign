@@ -5,9 +5,21 @@
 }
 
 .quickDetails {
-    border: 3px solid;
+    border: 5px solid #E1992B;
 }
 
 .eventPic {
     max-width: 100%;
+}
+
+.buttonColor {
+    background-color: #E1992B;
+    border-color: #E1992B;
+    width: 100%;
+}
+
+.quickDetailItem {
+font-size: 18px;
+font-weight: 400;
+padding-bottom: 10px;
 }

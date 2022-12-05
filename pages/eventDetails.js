@@ -53,7 +53,27 @@ export default function eventDetails() {
             lg={5}
             xl={5}
           >
-            Short details
+            <div>
+              <div className={`${styles.quickDetailItem}`}>
+                <strong>DATE: </strong> December 1st 2022
+              </div>
+              <div className={`${styles.quickDetailItem}`}>
+                <strong>TIME: </strong> 3:00PM - 8:00PM
+              </div>
+              <div className={`${styles.quickDetailItem}`}>
+                <strong>LOCATION: </strong>McLaren Lodge
+              </div>
+              <div className={`${styles.quickDetailItem}`}>
+                <strong>COST: </strong> FREE
+              </div>
+
+              <button
+                className={`btn btn-primary ${styles.buttonColor}`}
+                type="button"
+              >
+                <strong>RSVP</strong>
+              </button>
+            </div>
           </Col>
         </Row>
         <Row className="justify-content-md-center gridRow pt-4">
