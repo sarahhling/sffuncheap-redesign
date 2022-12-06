@@ -5,13 +5,27 @@ import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function CustomNavBar() {
+  const [image, setImage] = useState("/images/newlogo2.png");
+
   return (
     <Navbar className="py-4">
       <Container>
         <Navbar.Brand href="/" className="pe-5 ps-2">
-          <Image src="/images/newlogo.png" height="35" width={160} alt="logo" />
+          <Image
+            src={image}
+            height="35"
+            width={160}
+            alt="logo"
+            onMouseEnter={() => {
+              setImage("/images/rainbowlogo.png");
+            }}
+            onMouseLeave={() => {
+              setImage("/images/newlogo2.png");
+            }}
+          />
         </Navbar.Brand>
         <Nav className="me-auto ps-4">
           <Nav.Link href="/">

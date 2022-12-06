@@ -4,8 +4,12 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function EventCard({ date, pic, title }) {
+  const [cardHovered, onHover] = useState(); //add new tag with heart
+  const [heart, onClick] = useState(); //clicking on heart fills/unfills it
+
   const divStyle = {
     width: "145px",
     height: "145px",
@@ -40,7 +44,15 @@ export default function EventCard({ date, pic, title }) {
   return (
     <Col md="auto">
       <p style={dateStyle}>{date}</p>
-      <Link href="/eventDetails">
+      <Link
+        href="/eventDetails"
+        onMouseEnter={() => {
+          onHover("/images/rainbowlogo.png");
+        }}
+        onMouseLeave={() => {
+          onHover("/images/newlogo2.png");
+        }}
+      >
         <div style={divStyle}>
           <div style={titleStyle}>
             <p>{title}</p>
