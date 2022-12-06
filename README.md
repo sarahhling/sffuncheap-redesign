@@ -21,15 +21,14 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## TODO (By order of importance)
 
-|                To Do                 | Complete? |
-| :----------------------------------: | :-------: |
-|       Implement Search Results       |    No     |
-|        Implement Events List         |    No     |
-| make buttons clickable (modal/popup) |    No     |
-|    implement heart "like/unlike"     |    No     |
-|         Make Tags Clickable          |    No     |
-|       Implement updated Footer       |    No     |
-|         Fix page formatting          |    No     |
-|       Fix search icon position       |    No     |
-
-Fix Contact message Box text position
+|                 To Do                 | Complete? |
+| :-----------------------------------: | :-------: |
+|       Implement Search Results        |    No     |
+|         Implement Events List         |    No     |
+| make buttons clickable (modal/popup)  |    No     |
+|     implement heart "like/unlike"     |    No     |
+|          Make Tags Clickable          |    No     |
+|       Implement updated Footer        |    No     |
+|          Fix page formatting          |    No     |
+|       Fix search icon position        |    No     |
+| Fix Contact message Box text position |    No     |
