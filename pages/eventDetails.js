@@ -6,8 +6,31 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Tag from "../components/tag.js";
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/js/src/modal';
 
 export default function eventDetails() {
+  // const lightbox = document.createElement('div');
+  // lightbox.id = 'lightbox';
+  // document.body.appendChild(lightbox);
+  // const images = document.querySelectorAll('png');
+  // images.forEach(image => {
+  //   image.addEventListener('click', e => {
+  //     lightbox.classList.add('active')
+  //     const img = document.createElement('png')
+  //     img.src = image.src
+  //     while (lightbox.firstChild) {
+  //       lightbox.removeChild(lightbox.firstChild)
+  //     }
+  //     lightbox.appendChild(img)
+  //   })
+  // })
+
+  // lightbox.addEventListener('click', e => {
+  //   if (e.target !== e.currentTarget) return
+  //   lightbox.classList.remove('active')
+  // })
+
   return (
     <div>
       <Row className="gridRow">
@@ -138,11 +161,22 @@ export default function eventDetails() {
         <Col className={`pe-5`}>
           <Row>
             <Col>
+            <div>
               <Image
-                src="images/christmas-pair.png"
-                className={`${styles.eventPic}`}
-                alt="christmas people"
-              />
+                  src="images/christmas-pair.png"
+                  className={`${styles.eventPic}`}
+                  alt="christmas people" data-bs-target="imageExample"
+                />
+                <div className='modal fade' id='imageExample tabIndex="-1' aria-hiden="true">
+                  <div classname='modal-dialog'>
+                    <div classname='modal-content'>
+                      <button type="button" className='btn-close' 
+                      data-bs-dismiss="moda" aria-label="Close"></button>
+                      <Image src="images/christmas-pair.png" className='d-block w-100' />
+                      </div>
+                  </div>
+                </div>
+              </div>
             </Col>
             <Col>
               <Image
