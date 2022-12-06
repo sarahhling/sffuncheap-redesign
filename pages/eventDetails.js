@@ -7,7 +7,7 @@ import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Tag from "../components/tag.js";
 import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'bootstrap/js/src/modal';
+import 'bootstrap/js/src/modal';
 
 export default function eventDetails() {
   // const lightbox = document.createElement('div');
@@ -165,15 +165,15 @@ export default function eventDetails() {
               <Image
                   src="images/christmas-pair.png"
                   className={`${styles.eventPic}`}
-                  alt="christmas people" data-bs-target="imageExample"
+                  alt="christmas people" data-bs-toggle="modal" data-bs-target="imageExample"
                 />
-                <div className='modal fade' id='imageExample tabIndex="-1' aria-hiden="true">
+                <div className='modal fade' id='imageExample' tabIndex="-1" aria-hidden="true">
                   <div classname='modal-dialog'>
                     <div classname='modal-content'>
                       <button type="button" className='btn-close' 
-                      data-bs-dismiss="moda" aria-label="Close"></button>
+                      data-bs-dismiss="modal" aria-label="Close"></button>
                       <Image src="images/christmas-pair.png" className='d-block w-100' />
-                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
