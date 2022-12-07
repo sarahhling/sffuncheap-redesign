@@ -23,6 +23,12 @@ export default function ExpandedEventCard({
     width: "345px",
   };
 
+  const titleStyle = {
+    fontSize: "20px",
+    fontWeight: "bold",
+    lineHeight: "24px",
+  };
+
   const textStyle = {
     fontSize: "14px",
   };
@@ -34,8 +40,8 @@ export default function ExpandedEventCard({
         </Col>
         <Col sm={7} md={7} lg={7} xl={7}>
           <div className={`px-3 pt-2`} style={card}>
-            <div className={``}>
-              <strong>{title}</strong>
+            <div className={``} style={titleStyle}>
+              {title}
             </div>
             <div className={``} style={textStyle}>
               <strong>DATE: </strong> {date}

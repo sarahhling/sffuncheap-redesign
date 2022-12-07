@@ -3,6 +3,8 @@ import { Col, Row, Dropdown } from "react-bootstrap";
 import TagChunks from "../components/tagChunks.js";
 import Tag from "../components/tag.js";
 import styles2 from "../styles/eventDetails.module.css";
+import styles from "../styles/Home.module.css";
+
 import Image from "react-bootstrap/Image";
 import ExpandedEventCard from "../components/expandedEventCard.js";
 
@@ -48,7 +50,7 @@ export default function Filter() {
     <Tag tag="SAN FRANCISCO" color="#E07673" size="11px" key="1"></Tag>,
     <Tag tag="FREE" color="#1E5276" size="11px" key="3"></Tag>,
     <Tag tag="NEAR BUS" color="#582E67" size="10.5px" key="2"></Tag>,
-    <Tag tag="PARKS & REC" color="#E1992B" size="11px" key="3"></Tag>,
+    <Tag tag="ART" color="#E07673" size="11px" key="3"></Tag>,
   ];
 
   const tags6 = [
@@ -121,24 +123,24 @@ export default function Filter() {
             borderColor="#1E5276"
           />
           <ExpandedEventCard
-            pic="/images/christmas-fair-outdoor-tree.jpg"
-            title="Golden Gate Park's Holiday Tree Lighting + Outdoor Concert"
+            pic="/images/neon-club-arcade.jpg"
+            title="SF Arcade Bar 'Emporium' Free Game Token Night"
             tags={<TagChunks tags={tags2} width="100%" />}
-            date="December 1st, 2022"
-            time="3:00PM - 8:00PM"
-            location="Golden Gate Park"
-            cost="FREE"
+            date="December 5th, 2022"
+            time="7:00PM"
+            location="616 Divisadero St"
+            cost="*Varies"
             borderColor="#1E5276"
           />
           <ExpandedEventCard
-            pic="/images/christmas-fair-outdoor-tree.jpg"
-            title="Golden Gate Park's Holiday Tree Lighting + Outdoor Concert"
+            pic="/images/crowd-sigil.jpg"
+            title="“World AIDS Day” March to City Hall"
             tags={<TagChunks tags={tags3} width="100%" />}
-            date="December 1st, 2022"
-            time="3:00PM - 8:00PM"
-            location="Golden Gate Park"
+            date="December 11th, 2022"
+            time="6:00PM - 8:00PM"
+            location="City Hall"
             cost="FREE"
-            borderColor="#1E5276"
+            borderColor="#CB491D"
           />
           <ExpandedEventCard
             pic="/images/christmas-fair-outdoor-tree.jpg"
@@ -151,14 +153,14 @@ export default function Filter() {
             borderColor="#1E5276"
           />
           <ExpandedEventCard
-            pic="/images/christmas-fair-outdoor-tree.jpg"
-            title="Golden Gate Park's Holiday Tree Lighting + Outdoor Concert"
+            pic="/images/legion-of-honor.jpg"
+            title="'Legion of Honor' Museum Free Day"
             tags={<TagChunks tags={tags5} width="100%" />}
-            date="December 1st, 2022"
-            time="3:00PM - 8:00PM"
-            location="Golden Gate Park"
+            date="December 6th, 2022"
+            time="8:00AM - 6:00PM"
+            location="100 34th Ave"
             cost="FREE"
-            borderColor="#1E5276"
+            borderColor="#E07673"
           />
           <ExpandedEventCard
             pic="/images/christmas-fair-outdoor-tree.jpg"
@@ -171,6 +173,20 @@ export default function Filter() {
             borderColor="#1E5276"
           />
         </Col>
+      </Row>
+      <Row>
+        <div
+          className={`pt-3`}
+          style={{ fontSize: "26px", fontWeight: "bold", textAlign: "center" }}
+        >
+          1 of 5 &nbsp;&nbsp;&nbsp;
+          <button
+            className={`btn btn-primary py-0 px-3 ${styles.buttonStyle2}`}
+            type="button"
+          >
+            NEXT
+          </button>
+        </div>
       </Row>
       <Row className="justify-content-md-center gridRow pt-5">
         <Col className="gridCol footer pt-3">
