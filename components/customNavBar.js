@@ -29,7 +29,7 @@ export default function CustomNavBar() {
           />
         </Navbar.Brand>
         <Nav className="me-auto ps-4">
-          <Nav.Link href="/">
+          <Nav.Link href="/eventsPage">
             <strong>EVENTS</strong>
           </Nav.Link>
           <Nav.Link href="/contact" className="ps-4">
