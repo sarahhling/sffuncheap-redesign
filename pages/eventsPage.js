@@ -59,7 +59,7 @@ export default function Home() {
           </Dropdown>
         </Col>
       </Row>
-      <Row className="justify-content-md-center gridRow pt-4">
+      <Row className="justify-content-md-center gridRow pt-1">
         <EventCard
           title="Art Walk SF Block Party"
           date="JAN 12"
