@@ -23,13 +23,13 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 |                 To Do                 | Complete? |
 | :-----------------------------------: | :-------: |
-|       Implement Search Results        |    No     |
-|         Implement Events List         |    No     |
+|       Implement Search Results        |    yes    |
+|         Implement Events List         |    yes    |
 | make buttons clickable (modal/popup)  |    No     |
 |     implement heart "like/unlike"     |    No     |
 |          Make Tags Clickable          |    No     |
-|       Implement updated Footer        |    No     |
+|       Implement updated Footer        |    yes    |
 |          Fix page formatting          |    No     |
-|       Fix search icon position        |    No     |
+|       Fix search icon position        |    yes    |
 | Fix Contact message Box text position |    No     |
 |       Get "Inter" font to work        |    No     |
