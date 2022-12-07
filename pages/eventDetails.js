@@ -6,10 +6,14 @@ import HeartToggle from "../components/heartToggle";
 import React, { useState } from "react";
 import Tag from "../components/tag.js";
 
-export default function eventDetails() {
+export default function EventDetails() {
   const [active, setActive] = useState(false);
+  const [show, setShow] = useState(false);
 
-  const handleChangeActive = () => {
+  const HandleClose = () => setShow(false);
+  const HandleShow = () => setShow(true);
+
+  const HandleChangeActive = () => {
     setActive((previousStar) => {
       return !previousStar;
     });
@@ -20,11 +24,6 @@ export default function eventDetails() {
     textDecoration: "none",
     fontWeight: "bold",
   };
-
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
 
   return (
     <div>
@@ -97,7 +96,7 @@ export default function eventDetails() {
               <Col sm={3} md={2} lg={2} xl={2} className="pt-1">
                 <HeartToggle
                   active={active}
-                  handleChangeActive={handleChangeActive}
+                  HandleChangeActive={HandleChangeActive}
                   size="35px"
                   heart="/images/heart.png"
                 />

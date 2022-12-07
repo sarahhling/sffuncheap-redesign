@@ -9,7 +9,7 @@ export default function EventCard({ date, pic, title }) {
   const [cardHovered, onHover] = useState(); //add new tag with heart
   const [active, setActive] = useState(false);
 
-  const handleChangeActive = () => {
+  const HandleChangeActive = () => {
     setActive((previousStar) => {
       return !previousStar;
     });
@@ -53,13 +53,13 @@ export default function EventCard({ date, pic, title }) {
         <div style={{ position: "absolute", top: "10px", right: "10px" }}>
           <HeartToggle
             active={active}
-            handleChangeActive={handleChangeActive}
+            HandleChangeActive={HandleChangeActive}
             size="30px"
             heart="/images/heartred.png"
           />
         </div>
         <div style={titleStyle} className="text-center align-top">
-          <a
+          <Link
             href="/eventDetails"
             style={{
               textDecoration: "none",
@@ -67,7 +67,7 @@ export default function EventCard({ date, pic, title }) {
             }}
           >
             <p>{title}</p>
-          </a>
+          </Link>
         </div>
         <Link href="/eventDetails">
           <Image
