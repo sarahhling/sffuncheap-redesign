@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div>
       <Row className="gridRow">
-        <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
+        <Col className="gridCol" sm={6} md={6} lg={7} xl={7}>
           <Image
             src="images/golden-gate-bridge.png"
             alt="golden gate bridge"
@@ -42,8 +42,8 @@ export default function Home() {
         </Col>
         <Col
           className={`gridCol ${styles.bigBannerText}`}
-          sm={5}
-          md={5}
+          sm={6}
+          md={6}
           lg={5}
           xl={5}
         >
@@ -53,7 +53,7 @@ export default function Home() {
         </Col>
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
-        <Col className="gridCol pt-2" sm={2} md={3} lg={3} xl={3}>
+        <Col className="gridCol pt-2" sm={12} md={2} lg={3} xl={3}>
           <BannerBlock
             color="#582E67"
             text="WHO ARE WE?"
@@ -63,8 +63,8 @@ export default function Home() {
         </Col>
         <Col
           className={`gridCol px-0 pt-2 ${styles.about}`}
-          sm={10}
-          md={9}
+          sm={12}
+          md={10}
           lg={9}
           xl={9}
         >
