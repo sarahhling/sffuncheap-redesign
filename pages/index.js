@@ -1,11 +1,17 @@
 import styles from "../styles/Home.module.css";
 import { useState } from "react"; /*for newsletter modal */
-import { Row, Col, Image, Container } from "react-bootstrap";
+import { Row, Col, Image, Button } from "react-bootstrap";
 import BannerBlock from "../components/bannerBlock.js";
 import EventCard from "../components/eventCard.js";
 import TagChunks from "../components/tagChunks.js";
 import Tag from "../components/tag.js";
+import Modal from "react-bootstrap/Modal";
+
 export default function Home() {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const tags1 = [
     <Tag tag="SAN FRANCISCO" color="#E07673" size="12px" key="1"></Tag>,
     <Tag tag="KIDS & FAMILY" color="#582E67" size="12px" key="2"></Tag>,
@@ -227,11 +233,26 @@ export default function Home() {
             <button
               className={`btn btn-primary py-0 px-3 ${styles.buttonColor}`}
               type="button"
+              onClick={handleShow}
             >
               <strong>SUBMIT</strong>
             </button>
           </div>
         </Col>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
       </Row>
     </div>
   );

@@ -1,12 +1,21 @@
-import styles from "../styles/Home.module.css";
-import { useState } from "react"; /*for newsletter modal */
-import { Row, Col, Image, Container } from "react-bootstrap";
+import styles2 from "../styles/eventDetails.module.css";
+import { Row, Col, Image, Dropdown } from "react-bootstrap";
 import BannerBlock from "../components/bannerBlock.js";
 import EventCard from "../components/eventCard.js";
 import TagChunks from "../components/tagChunks.js";
 import Tag from "../components/tag.js";
 
 export default function Home() {
+  const buttonStyle = {
+    color: "black",
+    fontSize: "14px",
+    fontWeight: "bold",
+    borderColor: "black",
+    borderRadius: "3px",
+    backgroundColor: "white",
+    height: "30px",
+    paddingBottom: "24px",
+  };
   return (
     <div>
       <Row className="gridRow">
