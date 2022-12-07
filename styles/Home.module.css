@@ -54,6 +54,14 @@ padding-left: 16px;}
       border-color: #D9D9D9;
 }
 
+.buttonStyle2 {
+  background-color: #1E5276;
+  font-weight: bold;
+  width: 95px;
+  height: 35px;
+  border-color: #D9D9D9;
+}
+
 .searchForm { /*make global*/
   border-radius: 2px;
   height: 25px;

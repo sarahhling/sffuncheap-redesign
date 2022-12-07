@@ -6,7 +6,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Image from "react-bootstrap/Image";
 import Tag from "../components/tag.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 // import 'bootstrap/js/src/modal';
 
 export default function eventDetails() {
@@ -161,13 +161,15 @@ export default function eventDetails() {
         <Col className={`pe-5`}>
           <Row>
             <Col>
-            {/* <div> */}
+              {/* <div> */}
               <Image
-                  src="images/christmas-pair.png"
-                  className={`${styles.eventPic}`}
-                  alt="christmas people" data-bs-toggle="modal" data-bs-target="imageExample"
-                />
-                {/* <div className='modal fade' id='imageExample' tabIndex="-1" aria-hidden="true">
+                src="images/christmas-pair.png"
+                className={`${styles.eventPic}`}
+                alt="christmas people"
+                data-bs-toggle="modal"
+                data-bs-target="imageExample"
+              />
+              {/* <div className='modal fade' id='imageExample' tabIndex="-1" aria-hidden="true">
                   <div classname='modal-dialog'>
                     <div classname='modal-content'>
                       <button type="button" className='btn-close' 
@@ -199,18 +201,6 @@ export default function eventDetails() {
       </Row>
       <Row>
         <Col className={`ps-5 pt-2`}>BUS STOPS NEARBY: 5, 22, 28</Col>
-      </Row>
-      <Row className="justify-content-md-center gridRow pt-5">
-        <Col className="gridCol footer pt-3">
-          <p className="text-center footer">
-            <strong className="footer">FOOTER</strong>
-          </p>
-        </Col>
-        <Col className="gridCol footer pt-3">
-          <p className="text-center footer">
-            <strong className="footer">SOCIAL MEDIA LINKS</strong>
-          </p>
-        </Col>
       </Row>
     </div>
   );

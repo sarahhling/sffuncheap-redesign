@@ -1,10 +1,13 @@
 import "../styles/globals.css";
 //import Navbar from "../components/navBar";
-import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
+
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CustomNavBar from "../components/customNavBar.js";
+import CustomFooter from "../components/customFooter.js";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -16,6 +19,7 @@ function MyApp({ Component, pageProps }) {
           </Col>
         </Row>
         <Component {...pageProps} />
+        <CustomFooter />
       </div>
     </Container>
   );

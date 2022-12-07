@@ -12,6 +12,7 @@ export default function Tag({ tag, color, size }) {
     display: "inline-block",
     padding: "2px 5px",
     margin: "2px",
+    cursor: "pointer",
   };
 
   return <div style={divStyle}>{tag}</div>;

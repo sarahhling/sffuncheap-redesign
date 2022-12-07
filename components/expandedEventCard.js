@@ -23,19 +23,25 @@ export default function ExpandedEventCard({
     width: "345px",
   };
 
+  const titleStyle = {
+    fontSize: "20px",
+    fontWeight: "bold",
+    lineHeight: "24px",
+  };
+
   const textStyle = {
     fontSize: "14px",
   };
   return (
     <div>
       <Row className="pb-2">
-        <Col sm={5} md={5} lg={5} xl={5}>
+        <Col sm={4} md={4} lg={5} xl={5}>
           <Image src={pic} height="185" width="300" />
         </Col>
-        <Col sm={7} md={7} lg={7} xl={7}>
+        <Col sm={8} md={8} lg={7} xl={7}>
           <div className={`px-3 pt-2`} style={card}>
-            <div className={``}>
-              <strong>{title}</strong>
+            <div className={``} style={titleStyle}>
+              {title}
             </div>
             <div className={``} style={textStyle}>
               <strong>DATE: </strong> {date}
