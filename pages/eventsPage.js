@@ -62,93 +62,93 @@ export default function Home() {
       <Row className="justify-content-md-center gridRow pt-1">
         <EventCard
           title="Art Walk SF Block Party"
-          date="JAN 12"
+          date="DEC 1"
           pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="Art Walk SF Block Party"
-          date="JAN 12"
+          date="DEC 2"
           pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="2022 World Cup Semi-Finals Watch Party"
-          date="DEC 14"
+          date="DEC"
           pic="/images/crowd.jpg"
         />
         <EventCard
           title="Noise Pop's Holiday Party"
-          date="DEC 21"
+          date="DEC 4"
           pic="/images/crowd-concert.jpg"
         />
         <EventCard
           title="$6 Drive-In Movie Night"
-          date="DEC 27 "
+          date="DEC 5"
           pic="/images/billboard-blank.jpg"
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
         <EventCard
           title="Art Walk SF Block Party"
-          date="JAN 12"
+          date="DEC 6"
           pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="SF Arcade Free Game Night"
-          date="DEC 5"
+          date="DEC 7"
           pic="/images/neon-club-arcade.jpg"
         />
         <EventCard
           title="Let's glow SF"
-          date="DEC 2"
+          date="DEC 8"
           pic="/images/christmas-icicle-building.jpg"
         />
         <EventCard
           title="SF's Winterfest Beer & Comedy Hour"
-          date="DEC 18"
+          date="DEC 9"
           pic="/images/beer-fireplace.jpg"
         />
         <EventCard
           title="SF Symphony 'The Colors of Christmas' Live"
-          date="DEC 6"
+          date="DEC 10"
           pic="/images/christmas-organ.png"
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
         <EventCard
           title="Art Walk SF Block Party"
-          date="JAN 12"
+          date="DEC 11"
           pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="Art Walk SF Block Party"
-          date="DEC 1"
+          date="DEC 12"
           pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="Oakland Comedy Night"
-          date="DEC 8"
+          date="DEC 13"
           pic="/images/comedyClub.jpg"
         />
         <EventCard
           title="Grace Cathedral’s “A Cathedral Christmas”"
-          date="DEC 18"
+          date="DEC 14"
           pic="/images/christmas-cathedral-tree.jpg"
         />
         <EventCard
           title="37th Annual NYE Japanese Ringing Ceremony"
-          date="Dec 31"
+          date="Dec 15"
           pic="/images/bell-giant-asian.jpg"
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
         <EventCard
           title="Art Walk SF Block Party"
-          date="JAN 12"
+          date="DEC 16"
           pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="Hayes Valley 32nd Holiday Stroll"
-          date="DEC 2"
+          date="DEC 17"
           pic="/images/christmas-lights-walkway.jpg"
         />
         <EventCard
@@ -158,39 +158,39 @@ export default function Home() {
         />
         <EventCard
           title="Golden Gate Park Jazz Concert"
-          date="DEC 27 "
+          date="DEC 19"
           pic="/images/outdoor-concert-palace.png"
         />
         <EventCard
           title="'Pay-what-you-can' Taco Day"
-          date="DEC 1"
+          date="DEC 20"
           pic="/images/food-tacos.jpg"
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
         <EventCard
           title="Art Walk SF Block Party"
-          date="JAN 12"
+          date="DEC 21"
           pic="/images/crosswalk-painted.jpg"
         />
         <EventCard
           title="Hayes Valley 32nd Holiday Stroll"
-          date="DEC 2"
+          date="DEC 22"
           pic="/images/christmas-lights-walkway.jpg"
         />
         <EventCard
           title="Grace Cathedral’s “A Cathedral Christmas”"
-          date="DEC 18"
+          date="DEC 23"
           pic="/images/christmas-cathedral-tree.jpg"
         />
         <EventCard
           title="Golden Gate Park Jazz Concert"
-          date="DEC 27 "
+          date="DEC 24"
           pic="/images/outdoor-concert-palace.png"
         />
         <EventCard
           title="'Pay-what-you-can' Taco Day"
-          date="DEC 1"
+          date="DEC 25"
           pic="/images/food-tacos.jpg"
         />
       </Row>
