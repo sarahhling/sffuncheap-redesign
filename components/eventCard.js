@@ -58,7 +58,7 @@ export default function EventCard({ date, pic, title }) {
             heart="/images/heartred.png"
           />
         </div>
-        <div style={titleStyle} className="text-center align-top">
+        <div style={titleStyle} className=" align-top">
           <Link
             href="/eventDetails"
             style={{
