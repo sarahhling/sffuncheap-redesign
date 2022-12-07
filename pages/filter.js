@@ -7,6 +7,7 @@ import styles from "../styles/Home.module.css";
 
 import Image from "react-bootstrap/Image";
 import ExpandedEventCard from "../components/expandedEventCard.js";
+import FilterTab from "../components/filterTab.js";
 
 export default function Filter() {
   const buttonStyle = {
@@ -73,7 +74,7 @@ export default function Filter() {
       <Row className="pt-3">
         <Col sm={9} md={9} lg={9} xl={9}>
           <p style={{ fontSize: "26px", fontWeight: "bold" }}>
-            SEARCH RESULTS FOR: fillin
+            SEARCH RESULTS FOR: "Search Term"
           </p>
         </Col>
         <Col sm={3} md={3} lg={3} xl={3}>
@@ -101,15 +102,8 @@ export default function Filter() {
         </Col>
       </Row>
       <Row className="gridRow">
-        <Col
-          className="gridCol"
-          sm={3}
-          md={3}
-          lg={3}
-          xl={3}
-          style={{ backgroundColor: "blue" }}
-        >
-          filter bar
+        <Col className="gridCol" sm={3} md={3} lg={3} xl={3}>
+          <FilterTab />
         </Col>
         <Col className="gridCol" sm={9} md={9} lg={9} xl={9}>
           <ExpandedEventCard
