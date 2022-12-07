@@ -5,42 +5,50 @@ import BannerBlock from "../components/bannerBlock.js";
 import EventCard from "../components/eventCard.js";
 import TagChunks from "../components/tagChunks.js";
 import Tag from "../components/tag.js";
+
 export default function Home() {
-//   const tags1 = [
-//     <Tag tag="SAN FRANCISCO" color="#E07673" size="12px" key="1"></Tag>,
-//     <Tag tag="KIDS & FAMILY" color="#582E67" size="12px" key="2"></Tag>,
-//     <Tag tag="FREE" color="#1E5276" size="12px" key="3"></Tag>,
-//   ];
-
-//   const tags2 = [
-//     <Tag tag="CHEAP" color="#CB491D" size="12x" key="1"></Tag>,
-//     <Tag tag="SHOPPING" color="#582E67" size="12px" key="2"></Tag>,
-//     <Tag tag="EAST BAY" color="#1E5276" size="12px" key="3"></Tag>,
-//   ];
-
-//   const tags3 = [
-//     <Tag tag="SAN FRANCISCO" color="#E07673" size="11px" key="1"></Tag>,
-//     <Tag tag="FREE" color="#1E5276" size="11px" key="3"></Tag>,
-//     <Tag tag="NEAR BUS" color="#582E67" size="10.5px" key="2"></Tag>,
-//     <Tag tag="PARKS & REC" color="#E1992B" size="11px" key="3"></Tag>,
-//   ];
-
-//   const tags4 = [
-//     <Tag tag="CHEAP" color="#CB491D" size="12px" key="1"></Tag>,
-//     <Tag tag="EAT & DRINKS" color="#582E67" size="12px" key="2"></Tag>,
-//     <Tag tag="SAN FRANCISCO" color="#1E5276" size="12px" key="3"></Tag>,
-//   ];
   return (
     <div>
+      <Row className="gridRow">
+        <Col>
+          <Image
+            src="images/houses-painted-ladies.jpg"
+            alt="SF port"
+            className={`${styles2.eventPic}`}
+          />
+        </Col>
+      </Row>
+      <Row className="pt-3">
+        <Col sm={9} md={9} lg={9} xl={9}>
+          <p style={{ fontSize: "26px", fontWeight: "bold" }}>
+            EVENTS CALENDAR
+          </p>
+        </Col>
+        <Col sm={3} md={3} lg={3} xl={3}>
+          <Dropdown className="">
+            <Dropdown.Toggle
+              className={``}
+              id="dropdown-basic"
+              style={buttonStyle}
+            >
+              SORTED BY: PRICE
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className={``}>
+              <Dropdown.Item href="#/action-1" className={``}>
+                DATE
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-1" className={``}>
+                A to Z
+              </Dropdown.Item>
+              <Dropdown.Item href="#/action-1" className={``}>
+                Z to A
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </Col>
+      </Row>
       <Row className="justify-content-md-center gridRow pt-4">
-        {/* <Col className="gridCol">
-          {/* <BannerBlock
-            color="#1E5276"
-            text="JUST ADDED"
-            paddingLeft="19px"
-            paddingTop="55px"
-          /> */}
-        {/* </Col> */} */
         <EventCard
           title="Art Walk SF Block Party"
           date="JAN 12"
@@ -68,14 +76,6 @@ export default function Home() {
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
-        {/* <Col className="gridCol pt-2">
-          <BannerBlock
-            color="#E1992B"
-            text="FEATURED THIS MONTH"
-            paddingLeft="15px"
-            paddingTop="35px"
-          />
-        </Col> */}
         <EventCard
           title="Art Walk SF Block Party"
           date="JAN 12"
@@ -103,14 +103,6 @@ export default function Home() {
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
-        {/* <Col className="gridCol pt-2">
-          <BannerBlock
-            color="white"
-            text=""
-            paddingLeft="15px"
-            paddingTop="25px"
-          />
-        </Col> */}
         <EventCard
           title="Art Walk SF Block Party"
           date="JAN 12"
@@ -138,15 +130,6 @@ export default function Home() {
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
-        {/* <Col className="gridCol pt-2">
-          <BannerBlock
-            color="#E07673"
-            text="EVENTS BY TAGS"
-            paddingLeft="18px"
-            paddingRight="10px"
-            paddingTop="50px"
-          />
-        </Col> */}
         <EventCard
           title="Art Walk SF Block Party"
           date="JAN 12"
@@ -174,15 +157,6 @@ export default function Home() {
         />
       </Row>
       <Row className="justify-content-md-center gridRow pt-4">
-        {/* <Col className="gridCol pt-2">
-          <BannerBlock
-            color="#E07673"
-            text="EVENTS BY TAGS"
-            paddingLeft="18px"
-            paddingRight="10px"
-            paddingTop="50px"
-          />
-        </Col> */}
         <EventCard
           title="Art Walk SF Block Party"
           date="JAN 12"
