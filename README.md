@@ -25,9 +25,8 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 | :-----------------------------------: | :-------: |
 |       Implement Search Results        |    yes    |
 |         Implement Events List         |    yes    |
-| make buttons clickable (modal/popup)  |    No     |
-|     implement heart "like/unlike"     |    No     |
-|          Make Tags Clickable          |    No     |
+| make buttons clickable (modal/popup)  |    yes    |
+|     implement heart "like/unlike"     |    yes    |
 |       Implement updated Footer        |    yes    |
 |          Fix page formatting          |    No     |
 |       Fix search icon position        |    yes    |

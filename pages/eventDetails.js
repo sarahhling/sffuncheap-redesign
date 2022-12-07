@@ -9,6 +9,10 @@ import Tag from "../components/tag.js";
 export default function EventDetails() {
   const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
+
+  const handleClose2 = () => setShow2(false);
+  const handleShow2 = () => setShow2(true);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -169,8 +173,7 @@ export default function EventDetails() {
                 src="images/christmas-pair.png"
                 className={`${styles.eventPic}`}
                 alt="christmas people"
-                data-bs-toggle="modal"
-                data-bs-target="imageExample"
+                onClick={handleShow2}
               />
               {/* <div className='modal fade' id='imageExample' tabIndex="-1" aria-hidden="true">
                   <div classname='modal-dialog'>
@@ -188,6 +191,7 @@ export default function EventDetails() {
                 src="images/christmas-pandemic-street.png"
                 className={`${styles.eventPic}`}
                 alt="christmas masked street"
+                onClick={handleShow2}
               />
             </Col>
           </Row>
@@ -197,6 +201,7 @@ export default function EventDetails() {
                 src="images/christmas-pandemic.png"
                 className={`${styles.eventPic}`}
                 alt="christmas masked"
+                onClick={handleShow2}
               />
             </Col>
           </Row>
@@ -265,6 +270,18 @@ export default function EventDetails() {
               </div>
             </Col>
           </Row>
+        </Modal.Body>
+      </Modal>
+      <Modal show={show2} onHide={handleClose2} centered size="lg">
+        <Modal.Header closeButton></Modal.Header>
+        <Modal.Body>
+          <div className="text-center">
+            <Image
+              src="images/christmas-pandemic-full.png"
+              alt="christmas masked"
+              height="450px"
+            />
+          </div>
         </Modal.Body>
       </Modal>
     </div>
