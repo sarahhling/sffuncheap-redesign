@@ -32,7 +32,7 @@ export default function EventCard({ date, pic, title }) {
 
   const titleStyle = {
     position: "absolute",
-    paddingLeft: "5px",
+    paddingLeft: "10px",
     paddingRight: "5px",
     paddingBottom: "0px",
     bottom: "0",
