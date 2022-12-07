@@ -20,7 +20,7 @@ export default function ContactUs() {
         </Col>
       </Row>
       <Row className="gridRow px-5">
-        <Col className={`py-4`}>
+        <Col className={`py-5`}>
           <p style={{ fontSize: "45px", fontWeight: "bold" }}>CONTACT</p>
           <p style={{ fontSize: "16px" }}>
             If you have questions, comments, rant or want to promote an event on

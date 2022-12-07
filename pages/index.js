@@ -13,28 +13,28 @@ export default function Home() {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const tags1 = [
-    <Tag tag="SAN FRANCISCO" color="#E07673" size="12px" key="1"></Tag>,
-    <Tag tag="KIDS & FAMILY" color="#582E67" size="12px" key="2"></Tag>,
-    <Tag tag="FREE" color="#1E5276" size="12px" key="3"></Tag>,
+    <Tag tag="SAN FRANCISCO" color="#E07673" size="11px" key="1"></Tag>,
+    <Tag tag="KIDS & FAMILY" color="#582E67" size="11px" key="2"></Tag>,
+    <Tag tag="FREE" color="#1E5276" size="11px" key="3"></Tag>,
   ];
 
   const tags2 = [
-    <Tag tag="CHEAP" color="#CB491D" size="12x" key="1"></Tag>,
-    <Tag tag="SHOPPING" color="#582E67" size="12px" key="2"></Tag>,
-    <Tag tag="EAST BAY" color="#1E5276" size="12px" key="3"></Tag>,
+    <Tag tag="CHEAP" color="#CB491D" size="11x" key="1"></Tag>,
+    <Tag tag="SHOPPING" color="#582E67" size="11px" key="2"></Tag>,
+    <Tag tag="EAST BAY" color="#1E5276" size="11px" key="3"></Tag>,
   ];
 
   const tags3 = [
-    <Tag tag="SAN FRANCISCO" color="#E07673" size="11px" key="1"></Tag>,
-    <Tag tag="FREE" color="#1E5276" size="11px" key="3"></Tag>,
-    <Tag tag="NEAR BUS" color="#582E67" size="10.5px" key="2"></Tag>,
-    <Tag tag="PARKS & REC" color="#E1992B" size="11px" key="3"></Tag>,
+    <Tag tag="SAN FRANCISCO" color="#E07673" size="10.5px" key="1"></Tag>,
+    <Tag tag="FREE" color="#1E5276" size="10.5px" key="3"></Tag>,
+    <Tag tag="NEAR BUS" color="#582E67" size="10px" key="2"></Tag>,
+    <Tag tag="PARKS & REC" color="#E1992B" size="10.5px" key="3"></Tag>,
   ];
 
   const tags4 = [
-    <Tag tag="CHEAP" color="#CB491D" size="12px" key="1"></Tag>,
-    <Tag tag="EAT & DRINKS" color="#582E67" size="12px" key="2"></Tag>,
-    <Tag tag="SAN FRANCISCO" color="#1E5276" size="12px" key="3"></Tag>,
+    <Tag tag="CHEAP" color="#CB491D" size="11px" key="1"></Tag>,
+    <Tag tag="EAT & DRINKS" color="#582E67" size="11px" key="2"></Tag>,
+    <Tag tag="SAN FRANCISCO" color="#1E5276" size="11px" key="3"></Tag>,
   ];
   return (
     <div>
@@ -68,7 +68,7 @@ export default function Home() {
           />
         </Col>
         <Col
-          className={`gridCol px-0 pt-2 ${styles.about}`}
+          className={`gridCol px-0 pt-4 ${styles.about}`}
           sm={12}
           md={10}
           lg={9}

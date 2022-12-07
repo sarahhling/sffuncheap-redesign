@@ -110,7 +110,7 @@ export default function Filter() {
         <Col className="gridCol" sm={9} md={9} lg={9} xl={9}>
           <ExpandedEventCard
             pic="/images/christmas-fair-outdoor-tree.jpg"
-            title="Golden Gate Park's Holiday Tree Lighting + Outdoor Concert"
+            title="Golden Gate Park's Holiday Tree Lighting + Concert"
             tags={<TagChunks tags={tags1} width="100%" />}
             date="December 1st, 2022"
             time="3:00PM - 8:00PM"
@@ -140,7 +140,7 @@ export default function Filter() {
           />
           <ExpandedEventCard
             pic="/images/christmas-fair-outdoor-tree.jpg"
-            title="Golden Gate Park's Holiday Tree Lighting + Outdoor Concert"
+            title="Golden Gate Park Tree Lighting + Outdoor Concert"
             tags={<TagChunks tags={tags4} width="100%" />}
             date="December 1st, 2022"
             time="3:00PM - 8:00PM"
@@ -160,7 +160,7 @@ export default function Filter() {
           />
           <ExpandedEventCard
             pic="/images/christmas-fair-outdoor-tree.jpg"
-            title="Golden Gate Park's Holiday Tree Lighting + Outdoor Concert"
+            title="Golden Gate Park Holiday Tree Lighting + Outdoor Concert"
             tags={<TagChunks tags={tags6} width="100%" />}
             date="December 1st, 2022"
             time="3:00PM - 8:00PM"

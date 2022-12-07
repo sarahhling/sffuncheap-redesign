@@ -42,11 +42,11 @@ export default function FilterTab({}) {
         REGION:
       </div>
 
-      <Tag tag="SAN FRANCISCO" color="#E07673" size="14px" key="1"></Tag>
-      <Tag tag="PENINSULA" color="#1E5276" size="14px" key="2"></Tag>
-      <Tag tag="EAST BAY" color="#582E67" size="14px" key="3"></Tag>
-      <Tag tag="NORTH BAY" color="#CB491D" size="14px" key="4"></Tag>
-      <Tag tag="SOUTH BAY" color="#E1992B" size="14px" key="5"></Tag>
+      <Tag tag="SAN FRANCISCO" color="#E07673" size="13px" key="1"></Tag>
+      <Tag tag="PENINSULA" color="#1E5276" size="13px" key="2"></Tag>
+      <Tag tag="EAST BAY" color="#582E67" size="13px" key="3"></Tag>
+      <Tag tag="NORTH BAY" color="#CB491D" size="13px" key="4"></Tag>
+      <Tag tag="SOUTH BAY" color="#E1992B" size="13px" key="5"></Tag>
       <div className={``}>
         <div style={titleStyle}>COST:</div>
         <Row>
@@ -67,21 +67,21 @@ export default function FilterTab({}) {
         TAGS:
       </div>
       <div className={`pt-1`}>
-        <Tag tag="SHOPPING" color="#E07673" size="14px" key="1"></Tag>
-        <Tag tag="COMEDY" color="#CB491D" size="14px" key="2"></Tag>
-        <Tag tag="NEAR BUS" color="#582E67" size="14px" key="3"></Tag>
-        <Tag tag="CHEAP" color="#1E5276" size="14px" key="4"></Tag>
-        <Tag tag="FREE" color="#1E5276" size="14px" key="5"></Tag>
-        <Tag tag="KIDS & FAMILY" color="#E07673" size="14px" key="1"></Tag>
-        <Tag tag="FITNESS" color="#CB491D" size="14px" key="2"></Tag>
-        <Tag tag="LIVE MUSIC" color="#582E67" size="14px" key="3"></Tag>
-        <Tag tag="WORKSHOPS" color="#1E5276" size="14px" key="4"></Tag>
-        <Tag tag="ART" color="#E1992B" size="14px" key="5"></Tag>
-        <Tag tag="EAT & DRINK" color="#E07673" size="14px" key="1"></Tag>
-        <Tag tag="CLUB" color="#1E5276" size="14px" key="2"></Tag>
-        <Tag tag="PARKS & REC" color="#582E67" size="14px" key="3"></Tag>
-        <Tag tag="MOVIES" color="#CB491D" size="14px" key="4"></Tag>
-        <Tag tag="LITERATURE" color="#E1992B" size="14px" key="5"></Tag>
+        <Tag tag="SHOPPING" color="#E07673" size="13px" key="1"></Tag>
+        <Tag tag="COMEDY" color="#CB491D" size="13px" key="2"></Tag>
+        <Tag tag="NEAR BUS" color="#582E67" size="13px" key="3"></Tag>
+        <Tag tag="CHEAP" color="#1E5276" size="13px" key="4"></Tag>
+        <Tag tag="FREE" color="#1E5276" size="13px" key="5"></Tag>
+        <Tag tag="KIDS & FAMILY" color="#E07673" size="13px" key="1"></Tag>
+        <Tag tag="FITNESS" color="#CB491D" size="13px" key="2"></Tag>
+        <Tag tag="LIVE MUSIC" color="#582E67" size="13px" key="3"></Tag>
+        <Tag tag="WORKSHOPS" color="#1E5276" size="13px" key="4"></Tag>
+        <Tag tag="ART" color="#E1992B" size="13px" key="5"></Tag>
+        <Tag tag="EAT & DRINK" color="#E07673" size="13px" key="1"></Tag>
+        <Tag tag="CLUB" color="#1E5276" size="13px" key="2"></Tag>
+        <Tag tag="PARKS & REC" color="#582E67" size="13px" key="3"></Tag>
+        <Tag tag="MOVIES" color="#CB491D" size="13px" key="4"></Tag>
+        <Tag tag="LITERATURE" color="#E1992B" size="13px" key="5"></Tag>
       </div>
     </div>
   );
