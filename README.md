@@ -32,3 +32,4 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 |          Fix page formatting          |    No     |
 |       Fix search icon position        |    No     |
 | Fix Contact message Box text position |    No     |
+|       Get "Inter" font to work        |    No     |

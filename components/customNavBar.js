@@ -6,10 +6,11 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function CustomNavBar() {
   const [image, setImage] = useState("/images/newlogo2.png");
-
+  const router = useRouter();
   return (
     <Navbar className="py-4">
       <Container>
@@ -54,6 +55,7 @@ export default function CustomNavBar() {
           <button
             className={`btn btn-primary pt-0 ${styles.buttonColor}`}
             type="button"
+            onClick={() => router.push("/filter")}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

@@ -1,10 +1,6 @@
 import styles from "../styles/Home.module.css";
 import { useState } from "react"; /*for newsletter modal */
-import CustomNavBar from "../components/customNavBar.js";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import { Row, Col, Image, Container } from "react-bootstrap";
 import BannerBlock from "../components/bannerBlock.js";
 import EventCard from "../components/eventCard.js";
 import TagChunks from "../components/tagChunks.js";
@@ -205,10 +201,10 @@ export default function Home() {
       </Row>
       <Row className="justify-content-md-center gridRow pt-0">
         <Col className="gridCol pt-2"></Col>
-        <TagChunks tags={tags1} />
-        <TagChunks tags={tags2} />
-        <TagChunks tags={tags3} />
-        <TagChunks tags={tags4} />
+        <TagChunks tags={tags1} width="145px" />
+        <TagChunks tags={tags2} width="145px" />
+        <TagChunks tags={tags3} width="145px" />
+        <TagChunks tags={tags4} width="145px" />
       </Row>
       <Row className="justify-content-md-center gridRow pt-5">
         <Col

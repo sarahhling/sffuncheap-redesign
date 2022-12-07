@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import { Form } from 'react-bootstrap';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import React, { useState } from "react";
+import { Form } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 function Example() {
   const [show, setShow] = useState(false);
@@ -10,8 +10,8 @@ function Example() {
   const handleShow = () => setShow(true);
 
   return (
-    <>
-      <Button variant="primary" onClick={handleShow}>
+    <div></div>
+    /* <Button variant="primary" onClick={handleShow}>
         Launch static backdrop modal
       </Button>
 
@@ -46,7 +46,7 @@ function Example() {
           <Button variant="primary">Enter</Button>
         </Modal.Footer>
       </Modal>
-    </>
+    </> */
   );
 }
 
