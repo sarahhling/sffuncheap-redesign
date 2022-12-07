@@ -7,6 +7,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import CustomNavBar from "../components/customNavBar.js";
+import CustomFooter from "../components/customFooter.js";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -18,6 +19,7 @@ function MyApp({ Component, pageProps }) {
           </Col>
         </Row>
         <Component {...pageProps} />
+        <CustomFooter />
       </div>
     </Container>
   );

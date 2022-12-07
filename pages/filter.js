@@ -4,12 +4,14 @@ import TagChunks from "../components/tagChunks.js";
 import Tag from "../components/tag.js";
 import styles2 from "../styles/eventDetails.module.css";
 import styles from "../styles/Home.module.css";
-
+import { useRouter } from "next/router";
 import Image from "react-bootstrap/Image";
 import ExpandedEventCard from "../components/expandedEventCard.js";
 import FilterTab from "../components/filterTab.js";
 
 export default function Filter() {
+  const router = useRouter();
+
   const buttonStyle = {
     color: "black",
     fontSize: "14px",
@@ -177,22 +179,11 @@ export default function Filter() {
           <button
             className={`btn btn-primary py-0 px-3 ${styles.buttonStyle2}`}
             type="button"
+            onClick={() => router.push("/filter")}
           >
             NEXT
           </button>
         </div>
-      </Row>
-      <Row className="justify-content-md-center gridRow pt-5">
-        <Col className="gridCol footer pt-3">
-          <p className="text-center footer">
-            <strong className="footer">FOOTER</strong>
-          </p>
-        </Col>
-        <Col className="gridCol footer pt-3">
-          <p className="text-center footer">
-            <strong className="footer">SOCIAL MEDIA LINKS</strong>
-          </p>
-        </Col>
       </Row>
     </div>
   );

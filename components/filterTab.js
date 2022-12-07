@@ -39,7 +39,7 @@ export default function FilterTab({}) {
       <input type="date" class="form-control" />
 
       <div className={``} style={titleStyle}>
-        NEIGHBORHOOD:
+        REGION:
       </div>
 
       <Tag tag="SAN FRANCISCO" color="#E07673" size="14px" key="1"></Tag>

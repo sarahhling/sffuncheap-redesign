@@ -233,18 +233,6 @@ export default function Home() {
           </div>
         </Col>
       </Row>
-      <Row className="justify-content-md-center gridRow pt-5">
-        <Col className="gridCol footer pt-3">
-          <p className="text-center footer">
-            <strong className="footer">FOOTER</strong>
-          </p>
-        </Col>
-        <Col className="gridCol footer pt-3">
-          <p className="text-center footer">
-            <strong className="footer">SOCIAL MEDIA LINKS</strong>
-          </p>
-        </Col>
-      </Row>
     </div>
   );
 }
