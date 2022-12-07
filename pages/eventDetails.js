@@ -10,10 +10,10 @@ export default function EventDetails() {
   const [active, setActive] = useState(false);
   const [show, setShow] = useState(false);
 
-  const HandleClose = () => setShow(false);
-  const HandleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
-  const HandleChangeActive = () => {
+  const handleChangeActive = () => {
     setActive((previousStar) => {
       return !previousStar;
     });
@@ -96,7 +96,7 @@ export default function EventDetails() {
               <Col sm={3} md={2} lg={2} xl={2} className="pt-1">
                 <HeartToggle
                   active={active}
-                  HandleChangeActive={HandleChangeActive}
+                  handleChangeActive={handleChangeActive}
                   size="35px"
                   heart="/images/heart.png"
                 />

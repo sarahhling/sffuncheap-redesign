@@ -3,7 +3,7 @@ import { Image } from "react-bootstrap";
 
 export default function HeartToggle({
   active,
-  HandleChangeActive,
+  handleChangeActive,
   size,
   heart,
 }) {
@@ -17,7 +17,7 @@ export default function HeartToggle({
             alt="heart filled"
             height={size}
             width={size}
-            onClick={() => HandleChangeActive()}
+            onClick={() => handleChangeActive()}
             style={{ cursor: "pointer" }}
           />
         ) : (
@@ -27,7 +27,7 @@ export default function HeartToggle({
             alt="heart"
             height={size}
             width={size}
-            onClick={() => HandleChangeActive()}
+            onClick={() => handleChangeActive()}
             style={{ cursor: "pointer" }}
           />
         )}

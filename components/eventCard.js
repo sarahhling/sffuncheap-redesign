@@ -9,7 +9,7 @@ export default function EventCard({ date, pic, title }) {
   const [cardHovered, onHover] = useState(); //add new tag with heart
   const [active, setActive] = useState(false);
 
-  const HandleChangeActive = () => {
+  const handleChangeActive = () => {
     setActive((previousStar) => {
       return !previousStar;
     });
@@ -53,7 +53,7 @@ export default function EventCard({ date, pic, title }) {
         <div style={{ position: "absolute", top: "10px", right: "10px" }}>
           <HeartToggle
             active={active}
-            HandleChangeActive={HandleChangeActive}
+            handleChangeActive={handleChangeActive}
             size="30px"
             heart="/images/heartred.png"
           />
