@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useRouter } from "next/router";
 
 export default function ExpandedEventCard({
   pic,
@@ -16,6 +16,8 @@ export default function ExpandedEventCard({
   cost,
   borderColor,
 }) {
+  const router = useRouter();
+
   const card = {
     border: "4px solid " + `${borderColor}`,
     backgroundColor: "white",
@@ -34,7 +36,11 @@ export default function ExpandedEventCard({
   };
   return (
     <div>
-      <Row className="pb-2">
+      <Row
+        className="pb-2"
+        onClick={() => router.push("/eventDetails")}
+        style={{ cursor: "pointer" }}
+      >
         <Col sm={4} md={4} lg={5} xl={5}>
           <Image src={pic} height="185" width="300" alt="pic" />
         </Col>
