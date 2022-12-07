@@ -1,7 +1,12 @@
 import React from "react";
 import { Image } from "react-bootstrap";
 
-export default function HeartToggle({ active, handleChangeActive, size }) {
+export default function HeartToggle({
+  active,
+  handleChangeActive,
+  size,
+  heart,
+}) {
   return (
     <>
       <div className="toggle-wrapper">
@@ -9,7 +14,7 @@ export default function HeartToggle({ active, handleChangeActive, size }) {
           <Image
             className="inactive"
             src="/images/heart-filled.png"
-            alt="heart"
+            alt="heart filled"
             height={size}
             width={size}
             onClick={() => handleChangeActive()}
@@ -18,8 +23,8 @@ export default function HeartToggle({ active, handleChangeActive, size }) {
         ) : (
           <Image
             className="active"
-            src="/images/heart.png"
-            alt="heart filled"
+            src={heart}
+            alt="heart"
             height={size}
             width={size}
             onClick={() => handleChangeActive()}

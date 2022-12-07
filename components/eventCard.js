@@ -1,15 +1,19 @@
-import React from "react";
 import styles from "../styles/Home.module.css";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Col, Row } from "react-bootstrap/";
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import HeartToggle from "../components/heartToggle";
+import React, { useState } from "react";
 
 export default function EventCard({ date, pic, title }) {
   const [cardHovered, onHover] = useState(); //add new tag with heart
-  const [heart, onClick] = useState(); //clicking on heart fills/unfills it
+  const [active, setActive] = useState(false);
 
+  const handleChangeActive = () => {
+    setActive((previousStar) => {
+      return !previousStar;
+    });
+  };
   const divStyle = {
     width: "145px",
     height: "145px",
@@ -44,19 +48,28 @@ export default function EventCard({ date, pic, title }) {
   return (
     <Col md="auto">
       <p style={dateStyle}>{date}</p>
-      <Link
-        href="/eventDetails"
-        onMouseEnter={() => {
-          onHover("/images/rainbowlogo.png");
-        }}
-        onMouseLeave={() => {
-          onHover("/images/newlogo2.png");
-        }}
-      >
-        <div style={divStyle}>
-          <div style={titleStyle}>
+
+      <div style={divStyle}>
+        <div style={{ position: "absolute", top: "10px", right: "10px" }}>
+          <HeartToggle
+            active={active}
+            handleChangeActive={handleChangeActive}
+            size="30px"
+            heart="/images/heartred.png"
+          />
+        </div>
+        <div style={titleStyle} className="text-center align-top">
+          <a
+            href="/eventDetails"
+            style={{
+              textDecoration: "none",
+              color: "white",
+            }}
+          >
             <p>{title}</p>
-          </div>
+          </a>
+        </div>
+        <Link href="/eventDetails">
           <Image
             src={pic}
             style={imgStyle}
@@ -65,8 +78,8 @@ export default function EventCard({ date, pic, title }) {
             height="145"
             alt="event image"
           />
-        </div>
-      </Link>
+        </Link>
+      </div>
     </Col>
 
     // <div className="bg-image hover-overlay">

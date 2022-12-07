@@ -12,7 +12,11 @@ export default function Sandbox() {
 
   return (
     <div>
-      <HeartToggle active={active} handleChangeActive={handleChangeActive} />
+      <HeartToggle
+        active={active}
+        handleChangeActive={handleChangeActive}
+        heart="/images/heart.png"
+      />
     </div>
   );
 }

@@ -99,6 +99,7 @@ export default function eventDetails() {
                   active={active}
                   handleChangeActive={handleChangeActive}
                   size="35px"
+                  heart="/images/heart.png"
                 />
               </Col>
               <Col sm={3} md={2} lg={2} xl={2}>
