@@ -76,7 +76,7 @@ export default function Filter() {
       <Row className="pt-3">
         <Col sm={9} md={9} lg={9} xl={9}>
           <p style={{ fontSize: "26px", fontWeight: "bold" }}>
-            SEARCH RESULTS FOR: "Search Term"
+            SEARCH RESULTS FOR: &quot;Search Term&quot;
           </p>
         </Col>
         <Col sm={3} md={3} lg={3} xl={3}>
