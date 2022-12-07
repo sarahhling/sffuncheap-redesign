@@ -4,7 +4,7 @@ import "../styles/Navbar.module.css";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import Image from "next/image";
+import Image from "react-bootstrap/Image";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
@@ -47,7 +47,7 @@ export default function CustomNavBar() {
             <i class="fas fa-search"></i>
           </button>
         </div> */}
-        <div class="input-group ps-2">
+        <div class="input-group ps-2 pe-3">
           <input
             type="text"
             className={`form-control input-sm ${styles.searchBar}`}
@@ -69,6 +69,14 @@ export default function CustomNavBar() {
             </svg>
           </button>
         </div>
+        <Image
+          src="images/avatar.png"
+          alt="account profile pic"
+          height="45"
+          width="45"
+          roundedCircle
+          style={{ cursor: "pointer" }}
+        />
       </Container>
     </Navbar>
   );

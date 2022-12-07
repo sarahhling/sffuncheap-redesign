@@ -1,11 +1,11 @@
 import styles from "../styles/Home.module.css";
 import { useState } from "react"; /*for newsletter modal */
-import { Row, Col, Image, Button } from "react-bootstrap";
+import { Row, Col, Image, Button, Modal } from "react-bootstrap";
 import BannerBlock from "../components/bannerBlock.js";
 import EventCard from "../components/eventCard.js";
 import TagChunks from "../components/tagChunks.js";
 import Tag from "../components/tag.js";
-import Modal from "react-bootstrap/Modal";
+import { Form, Dropdown } from "react-bootstrap";
 
 export default function Home() {
   const [show, setShow] = useState(false);
@@ -239,21 +239,73 @@ export default function Home() {
             </button>
           </div>
         </Col>
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>Woohoo!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
       </Row>
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Body className="p-5" style={{ border: "10px solid #1E5276" }}>
+          <p className="text-center px-5" style={{ fontSize: "18px" }}>
+            To like and save events to your favorites list, log in!
+          </p>
+          <Row className="justify-content-md-center gridRow pe-5">
+            <Col
+              className="gridCol"
+              sm={5}
+              md={5}
+              lg={5}
+              xl={5}
+              style={{ fontSize: "14px" }}
+            >
+              <p className="text-end">
+                <strong>USERNAME</strong>
+              </p>
+            </Col>
+            <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
+              <div className="input-group pe-3 pb-3">
+                <input
+                  type="text"
+                  className={`form-control input-sm ${styles.searchBar}`}
+                />
+              </div>
+            </Col>
+          </Row>
+          <Row className="justify-content-md-center gridRow pe-5">
+            <Col
+              className="gridCol"
+              sm={5}
+              md={5}
+              lg={5}
+              xl={5}
+              style={{ fontSize: "14px" }}
+            >
+              <p className="text-end">
+                <strong>PASSWORD</strong>
+              </p>
+            </Col>
+            <Col className="gridCol" sm={7} md={7} lg={7} xl={7}>
+              <div className="input-group pe-3">
+                <input
+                  type="text"
+                  className={`form-control input-sm ${styles.searchBar}`}
+                />
+              </div>
+            </Col>
+          </Row>
+          <div
+            className="text-center pt-2"
+            style={{ fontSize: "14px", cursor: "pointer" }}
+          >
+            SIGN UP
+          </div>
+          <div className="text-end">
+            <Button
+              className={`btn btn-primary py-0 px-3 ${styles.buttonColor}`}
+              type="button"
+              onClick={handleClose}
+            >
+              <strong>SUBMIT</strong>
+            </Button>
+          </div>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }
