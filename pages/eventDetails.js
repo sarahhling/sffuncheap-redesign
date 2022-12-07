@@ -1,13 +1,10 @@
 import styles from "../styles/eventDetails.module.css";
+import styles2 from "../styles/Home.module.css";
+import Link from "next/link";
 import { useState } from "react"; /*for newsletter modal */
-import CustomNavBar from "../components/customNavBar.js";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import { Row, Modal, Col, Image } from "react-bootstrap";
+
 import Tag from "../components/tag.js";
-import "bootstrap/dist/css/bootstrap.min.css";
-// import 'bootstrap/js/src/modal';
 
 export default function eventDetails() {
   // const lightbox = document.createElement('div');
@@ -30,6 +27,16 @@ export default function eventDetails() {
   //   if (e.target !== e.currentTarget) return
   //   lightbox.classList.remove('active')
   // })
+  const linkStyle = {
+    color: "white",
+    textDecoration: "none",
+    fontWeight: "bold",
+  };
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   return (
     <div>
@@ -70,7 +77,7 @@ export default function eventDetails() {
           lg={5}
           xl={5}
         >
-          <div className={`ps-4 pt-4`}>
+          <div className={`ps-4 pt-5`}>
             <div className={`${styles.quickDetailItem}`}>
               <strong>DATE: </strong> December 1st 2022
             </div>
@@ -80,7 +87,7 @@ export default function eventDetails() {
             <div className={`${styles.quickDetailItem}`}>
               <strong>LOCATION: </strong>McLaren Lodge
             </div>
-            <div className={`${styles.quickDetailItem}`}>
+            <div className={` pb-4 ${styles.quickDetailItem}`}>
               <strong>COST: </strong> FREE
             </div>
 
@@ -104,6 +111,7 @@ export default function eventDetails() {
               fill="currentColor"
               class="bi bi-heart"
               viewBox="0 0 16 16"
+              style={{ cursor: "pointer" }}
             >
               <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z" />
             </svg>
@@ -114,6 +122,8 @@ export default function eventDetails() {
               fill="currentColor"
               class="bi bi-share"
               viewBox="0 0 16 16"
+              onClick={handleShow}
+              style={{ cursor: "pointer" }}
             >
               <path d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z" />
             </svg>
@@ -124,6 +134,8 @@ export default function eventDetails() {
               fill="currentColor"
               class="bi bi-calendar4-event"
               viewBox="0 0 16 16"
+              onClick={handleShow}
+              style={{ cursor: "pointer" }}
             >
               <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2zm13 3H1v9a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V5z" />
               <path d="M11 7.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
@@ -202,6 +214,68 @@ export default function eventDetails() {
       <Row>
         <Col className={`ps-5 pt-2`}>BUS STOPS NEARBY: 5, 22, 28</Col>
       </Row>
+      <Modal show={show} onHide={handleClose} centered>
+        <Modal.Body className="p-5" style={{ border: "10px solid #CB491D" }}>
+          <p
+            className="text-center px-4"
+            style={{ fontSize: "28px", fontWeight: "bold" }}
+          >
+            SHARE
+          </p>
+          <p className="text-center">https://sffuncheap-redesign.vercel.app/</p>
+
+          <Row className="justify-content-md-center gridRow">
+            <Col className="gridCol pt-3">
+              <div className="text-center">
+                <Link href="https://facebook.com" className="pe-3">
+                  <Image
+                    src="/images/fbdark.png"
+                    width="45"
+                    height="45"
+                    alt="facebook"
+                  />
+                </Link>
+                <Link href="https://reddit.com/r/aww" className="pe-3">
+                  <Image
+                    src="/images/snoo.png"
+                    width="45"
+                    height="45"
+                    alt="reddit"
+                  />
+                </Link>
+                <Link href="https://gmail.com" className="pe-3">
+                  <Image
+                    src="/images/mail.png"
+                    width="45"
+                    height="45"
+                    alt="mail"
+                  />
+                </Link>
+                <Link href="https://discord.com" className="pe-3">
+                  <Image
+                    src="/images/discorddark.png"
+                    width="45"
+                    height="45"
+                    alt="discord"
+                  />
+                </Link>
+                <Link
+                  href="https://reddit.com/r/horror"
+                  className=""
+                  style={linkStyle}
+                >
+                  <Image
+                    src="/images/twitterdark.png"
+                    width="45"
+                    height="45"
+                    alt="twitter"
+                  />
+                </Link>
+              </div>
+            </Col>
+          </Row>
+        </Modal.Body>
+      </Modal>
     </div>
   );
 }
