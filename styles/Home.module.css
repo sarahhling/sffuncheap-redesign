@@ -24,13 +24,13 @@ padding-left: 16px;}
 .buttonColor { /*make global*/
   background-color: #1E5276;
   border-radius: 2px;
-    height: 25px;
+    height: 30px;
 }
 
 .searchBar {
     background-color: #D9D9D9;
     border-radius: 2px;
-      height: 25px;
+      height: 30px;
 
 }
 

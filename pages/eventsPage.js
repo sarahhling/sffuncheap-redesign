@@ -1,4 +1,6 @@
 import styles2 from "../styles/eventDetails.module.css";
+import styles from "../styles/Home.module.css";
+
 import { Row, Col, Image, Dropdown } from "react-bootstrap";
 import BannerBlock from "../components/bannerBlock.js";
 import EventCard from "../components/eventCard.js";
@@ -191,6 +193,21 @@ export default function Home() {
           date="DEC 1"
           pic="/images/food-tacos.jpg"
         />
+      </Row>
+      <Row>
+        <div
+          className={`pt-5`}
+          style={{ fontSize: "20px", fontWeight: "bold", textAlign: "center" }}
+        >
+          1 of 5 &nbsp;&nbsp;&nbsp;
+          <button
+            className={`btn btn-primary py-0 px-3 ${styles.buttonStyle2}`}
+            type="button"
+            onClick={() => router.push("/filter")}
+          >
+            NEXT
+          </button>
+        </div>
       </Row>
       {/* <Row className="justify-content-md-center gridRow pt-0">
         <Col className="gridCol pt-2"></Col>
