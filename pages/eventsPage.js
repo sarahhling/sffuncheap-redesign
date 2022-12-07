@@ -199,7 +199,7 @@ export default function Home() {
           className={`pt-5`}
           style={{ fontSize: "20px", fontWeight: "bold", textAlign: "center" }}
         >
-          1 of 5 &nbsp;&nbsp;&nbsp;
+          1 of 35 &nbsp;&nbsp;&nbsp;
           <button
             className={`btn btn-primary py-0 px-3 ${styles.buttonStyle2}`}
             type="button"

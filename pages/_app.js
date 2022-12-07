@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 //import Navbar from "../components/navBar";
 import "bootstrap/dist/css/bootstrap.css";
-// import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
+import "react-bootstrap-range-slider/dist/react-bootstrap-range-slider.css";
 
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";

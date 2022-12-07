@@ -24,16 +24,16 @@ export default function Filter() {
   };
 
   const tags1 = [
-    <Tag tag="SAN FRANCISCO" color="#E07673" size="12px" key="1"></Tag>,
-    <Tag tag="NEAR BUS" color="#582E67" size="12px" key="2"></Tag>,
-    <Tag tag="FREE" color="#1E5276" size="12px" key="3"></Tag>,
-    <Tag tag="PARKS & REC" color="#1E5276" size="12px" key="3"></Tag>,
+    <Tag tag="SAN FRANCISCO" color="#E07673" size="11px" key="1"></Tag>,
+    <Tag tag="NEAR BUS" color="#582E67" size="11px" key="2"></Tag>,
+    <Tag tag="FREE" color="#1E5276" size="11px" key="3"></Tag>,
+    <Tag tag="PARKS & REC" color="#1E5276" size="11px" key="3"></Tag>,
   ];
 
   const tags2 = [
     <Tag tag="CHEAP" color="#CB491D" size="12x" key="1"></Tag>,
-    <Tag tag="SHOPPING" color="#582E67" size="12px" key="2"></Tag>,
-    <Tag tag="EAST BAY" color="#1E5276" size="12px" key="3"></Tag>,
+    <Tag tag="SHOPPING" color="#582E67" size="11px" key="2"></Tag>,
+    <Tag tag="EAST BAY" color="#1E5276" size="11px" key="3"></Tag>,
   ];
 
   const tags3 = [
@@ -44,9 +44,9 @@ export default function Filter() {
   ];
 
   const tags4 = [
-    <Tag tag="CHEAP" color="#CB491D" size="12px" key="1"></Tag>,
-    <Tag tag="EAT & DRINKS" color="#582E67" size="12px" key="2"></Tag>,
-    <Tag tag="SAN FRANCISCO" color="#1E5276" size="12px" key="3"></Tag>,
+    <Tag tag="CHEAP" color="#CB491D" size="11px" key="1"></Tag>,
+    <Tag tag="EAT & DRINKS" color="#582E67" size="11px" key="2"></Tag>,
+    <Tag tag="SAN FRANCISCO" color="#1E5276" size="11px" key="3"></Tag>,
   ];
 
   const tags5 = [
@@ -57,9 +57,9 @@ export default function Filter() {
   ];
 
   const tags6 = [
-    <Tag tag="CHEAP" color="#CB491D" size="12px" key="1"></Tag>,
-    <Tag tag="EAT & DRINKS" color="#582E67" size="12px" key="2"></Tag>,
-    <Tag tag="SAN FRANCISCO" color="#1E5276" size="12px" key="3"></Tag>,
+    <Tag tag="CHEAP" color="#CB491D" size="11px" key="1"></Tag>,
+    <Tag tag="EAT & DRINKS" color="#582E67" size="11px" key="2"></Tag>,
+    <Tag tag="SAN FRANCISCO" color="#1E5276" size="11px" key="3"></Tag>,
   ];
 
   return (
