@@ -81,7 +81,7 @@ export default function CustomFooter() {
               FAQ
             </Link>
           </div>
-          <div className="text-center pt-2" style={{ fontSize: "12px", color: "#e4e4e4" }}>
+          <div className="text-center pt-3" style={{ fontSize: "12px", color: "#e4e4e4" }}>
             <p>Redesign of <Link href="https://sf.funcheap.com/" style={linkStyle}>sf.funcheap.com</Link> by Sarah Ling, Ryan Warrick, Dominique Cadenas Calvo, Meseret Mehzun</p>
           </div>
         </Col>
